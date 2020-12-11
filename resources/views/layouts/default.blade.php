@@ -6,7 +6,7 @@
     <title>{{ $title ?? '' }} - Codefuel</title>
 
     <link rel="shortcut icon" href="{{ asset('/assets/svg/logo.svg') }}" type="image/svg">
-    <link rel="stylesheet" href="{{ asset('/assets/css/app.css') }}">
+    <link rel="stylesheet" href="{{ url(mix('assets/css/app.css')) }}">
 </head>
 <body>
     @include('layouts.partials.header')
@@ -17,7 +17,7 @@
 
     @include('layouts.partials.footer')
 
-    <script src="{{ asset('/assets/js/app.js') }}"></script>
+    <script src="{{ url(mix('assets/js/app.js')) }}"></script>
 
 </body>
 </html>
