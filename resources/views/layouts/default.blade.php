@@ -11,9 +11,11 @@
 <body>
     @include('layouts.partials.header')
 
-    <main class="px-6 | md:px-32">
-        @yield('content')
-    </main>
+    @yield('beforeMainContent')
+
+    @yield('mainContent')
+
+    @yield('afterMainContent')
 
     @include('layouts.partials.footer')
 
