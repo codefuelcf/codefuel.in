@@ -8,6 +8,10 @@
     font-family: 'Miriam Libre', sans-serif;
 }
 
+a {
+    @apply hover:text-primary;
+}
+
 .breadcrumb {
     background-image: url('/assets/img/breadcrumb-bg-frankie-lopez.jpg');
     @apply w-full py-20 bg-cover;
