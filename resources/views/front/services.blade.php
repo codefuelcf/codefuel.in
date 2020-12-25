@@ -1,12 +1,12 @@
 @extends('layouts.default')
 
 @section('beforeMainContent')
-    @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Here\'s the wide range of services that we provide'])
+    @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Here\'s the range of services that we provide'])
 @endsection
 
 @section('mainContent')
 <main>
-    <section id="about-us" class="px-6 py-20 | md:px-32 md:flex md:items-start">
+    <section id="services" class="px-6 py-20 | md:px-32 md:flex md:items-start">
         <div class="w-full py-8 | md:py-0 md:px-8 md:w-1/3">
             <div class="mb-8">
                 <img src="{{ asset('/assets/svg/services-web-development.svg') }}" alt="Codefuel" class="h-40 mx-auto" />

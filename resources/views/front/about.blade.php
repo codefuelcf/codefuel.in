@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('beforeMainContent')
-    @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Get to know more about us and our values'])
+    @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Get to know more about us'])
 @endsection
 
 @section('mainContent')

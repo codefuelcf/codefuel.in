@@ -3,7 +3,6 @@
         <li class="block mr-4 ml-4 py-2 | lg:py-0 lg:ml-0 lg:inline-block"><a href="#">Home</a></li>
         <li class="block mx-4 py-2 | lg:py-0 lg:inline-block"><a href="{{ route('front.about') }}">About</a></li>
         <li class="block mx-4 py-2 | lg:py-0 lg:inline-block"><a href="#">Blogs</a></li>
-        <li class="block mx-4 py-2 | lg:py-0 lg:inline-block"><a href="#">Technologies</a></li>
         <li class="block mx-4 py-2 | lg:py-0 lg:inline-block"><a href="{{ route('front.services') }}">Services</a></li>
         <li class="block ml-4 py-2 | lg:py-0 lg:inline-block"><a href="#">Contact</a></li>
     </ul>
