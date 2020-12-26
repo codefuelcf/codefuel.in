@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Home
+// About
+Route::view(
+    '/',
+    'front.home',
+    ['title' => 'Home']
+)->name('front.home');
+
 // About
 Route::view(
     '/about',

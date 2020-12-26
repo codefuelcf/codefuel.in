@@ -19,7 +19,7 @@
         <div class="w-full py-8 | lg:w-1/4 lg:py-0 lg:px-6">
             <h4 class="text-xl capitalize font-bold mb-4">Company</h4>
             <ul class="list none capitalize">
-                <li><a href="#">About</a></li>
+                <li><a href="{{ route('front.about') }}">About</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Affiliate</a></li>
                 <li><a href="#">Privacy Policy</a></li>

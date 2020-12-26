@@ -7,6 +7,7 @@
 
     <link rel="shortcut icon" href="{{ asset('/assets/svg/logo.svg') }}" type="image/svg">
     <link rel="stylesheet" href="{{ url(mix('assets/css/app.css')) }}">
+    @stack('stylesheets')
 </head>
 <body>
     @include('layouts.partials.header')
@@ -20,6 +21,7 @@
     @include('layouts.partials.footer')
 
     <script src="{{ url(mix('assets/js/app.js')) }}"></script>
+    @stack('javascripts')
 
 </body>
 </html>
