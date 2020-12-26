@@ -20,8 +20,6 @@
             <h4 class="text-xl capitalize font-bold mb-4">Company</h4>
             <ul class="list none capitalize">
                 <li><a href="{{ route('front.about') }}">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Affiliate</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
             </ul>

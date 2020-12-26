@@ -3,10 +3,10 @@
 @section('mainContent')
 <main>
     <section id="home-hero" class="px-6 py-20 bg-gradient-to-bl from-primary to-red-800 text-white | md:px-32 md:flex md:items-center">
-        <div class="hidden mb-8 | md:block md:px-8 md:w-1/2 md:mb-0">
+        <div class="hidden mb-8 | md:block md:px-8 md:w-1/3 md:mb-0">
             <img src="{{ asset('/assets/svg/logo.svg') }}" alt="Codefuel" class="h-32 mx-auto" />
         </div>
-        <div class="w-full text-right | md:px-8 md:w-1/2">
+        <div class="w-full text-right | md:px-8 md:w-2/3">
             <h1 class="text-5xl">
                 Hey There, We Are <br />
             </h1>
@@ -18,7 +18,7 @@
             </p>
         </div>
     </section>
-    <section id="our-numbers" class="px-6 py-10 text-center w-full flex items-start | md:w-1/3 md:mx-auto">
+    <section id="our-numbers" class="px-6 py-20 text-center w-full flex items-start | md:w-1/3 md:mx-auto">
         <div class="px-8 w-1/3">
             <h2 class="text-xl font-bold text-primary">15+</h2>
             <h4 class="text-xs">Clients</h4>
@@ -32,7 +32,7 @@
             <h4 class="text-xs">Projects</h4>
         </div>
     </section>
-    <section id="clients" class="bg-gradient-to-t from-white to-gray-50 border-t-2 border-gray-100 px-6 py-20 bg-white text-center | md:px-32">
+    <section id="clients" class="bg-gradient-to-b from-gray-50 to-white border-t-2 border-gray-100 px-6 py-20 bg-white text-center | md:px-32">
         <h2 class="text-md font-bold uppercase mb-8">
             Clients we have worked with
         </h2>
