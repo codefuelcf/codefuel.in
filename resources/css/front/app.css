@@ -9,7 +9,27 @@
 }
 
 a {
-    @apply hover:text-primary;
+    @apply text-primary hover:underline;
+}
+
+footer a {
+    @apply text-white hover:no-underline;
+}
+
+.menu-item {
+    @apply block py-2 lg:py-0 lg:inline-block;
+}
+
+.menu .menu-item:first-child {
+    @apply lg:ml-0;
+}
+
+.menu .menu-item:last-child {
+    @apply lg:mr-0;
+}
+
+.menu-item a {
+    @apply text-black hover:text-primary hover:no-underline;
 }
 
 .breadcrumb {
