@@ -23,3 +23,10 @@ Route::view(
     'front.services',
     ['title' => 'Services']
 )->name('front.services');
+
+// Services
+Route::view(
+    '/privacy-policy',
+    'front.privacyPolicy',
+    ['title' => 'Privacy Policy']
+)->name('front.privacy-policy');
