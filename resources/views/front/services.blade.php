@@ -9,7 +9,7 @@
     <section id="services" class="px-6 py-20 | md:px-32 md:flex md:items-start">
         <div class="w-full py-8 | md:py-0 md:px-8 md:w-1/3">
             <div class="mb-8">
-                <img src="{{ asset('/assets/svg/services-web-development.svg') }}" alt="Codefuel" class="h-40 mx-auto" />
+                @include('svgs.services.development', ['class' => 'h-40 mx-auto'])
             </div>
             <div class="text-center">
                 <h2 class="text-2xl">
@@ -22,7 +22,7 @@
         </div>
         <div class="w-full py-8 | md:py-0 md:px-8 md:w-1/3">
             <div class="mb-8">
-                <img src="{{ asset('/assets/svg/services-designing.svg') }}" alt="Codefuel" class="h-40 mx-auto" />
+                @include('svgs.services.designing', ['class' => 'h-40 mx-auto'])
             </div>
             <div class="text-center">
                 <h2 class="text-2xl">
@@ -35,7 +35,7 @@
         </div>
         <div class="w-full py-8 | md:py-0 md:px-8 md:w-1/3">
             <div class="mb-8">
-                <img src="{{ asset('/assets/svg/services-marketing.svg') }}" alt="Codefuel" class="h-40 mx-auto" />
+                @include('svgs.services.marketing', ['class' => 'h-40 mx-auto'])
             </div>
             <div class="text-center">
                 <h2 class="text-2xl">

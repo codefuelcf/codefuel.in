@@ -8,7 +8,7 @@
 <main>
     <section id="about-us" class="px-6 py-20 | md:px-32 md:flex md:items-center">
         <div class="w-full mb-8 | md:px-8 md:w-1/4 md:mb-0">
-            <img src="{{ asset('/assets/svg/logo.svg') }}" alt="Codefuel" class="h-32 mx-auto" />
+            @include('svgs.logo', ['class' => 'h-32 mx-auto text-primary'])
         </div>
         <div class="w-full text-justify | md:px-8 md:w-3/4">
             <p class="text-md">
