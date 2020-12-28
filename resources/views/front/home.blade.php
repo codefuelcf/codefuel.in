@@ -37,13 +37,16 @@
             Clients we have worked with
         </h2>
         <div class="text-gray-900 | lg:flex lg:items-center lg:justify-between">
-            <div class="h-20 w-full | lg:w-1/3">
+            <div class="h-20 w-full | flex items-center lg:w-1/4">
                 @include('svgs.clients.royalenfield', ['class' => 'h-20 mx-auto'])
             </div>
-            <div class="h-20 w-full | lg:w-1/3">
+            <div class="h-20 w-full | flex items-center lg:w-1/4">
+                @include('svgs.clients.sheengraphics', ['class' => 'h-16 mx-auto'])
+            </div>
+            <div class="h-20 w-full | flex items-center lg:w-1/4">
                 @include('svgs.clients.harame', ['class' => 'h-20 mx-auto'])               
             </div>
-            <div class="h-20 w-full | lg:w-1/3">
+            <div class="h-20 w-full | flex items-center lg:w-1/4">
                 @include('svgs.clients.gesture', ['class' => 'h-20 mx-auto'])
             </div>
         </div>
