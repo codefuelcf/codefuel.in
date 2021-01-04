@@ -21,7 +21,7 @@
             <ul class="list none capitalize">
                 <li><a href="{{ route('front.about') }}">About</a></li>
                 <li><a href="{{ route('front.privacy-policy') }}">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="{{ route('front.terms-conditions') }}">Terms & Conditions</a></li>
             </ul>
         </div>
         <div class="w-full py-8 | lg:w-1/4 lg:py-0 lg:px-6">

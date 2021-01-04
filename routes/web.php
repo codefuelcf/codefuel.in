@@ -24,9 +24,16 @@ Route::view(
     ['title' => 'Services']
 )->name('front.services');
 
-// Services
+// Privacy Policy
 Route::view(
     '/privacy-policy',
     'front.privacyPolicy',
     ['title' => 'Privacy Policy']
 )->name('front.privacy-policy');
+
+// Terms and Conditions
+Route::view(
+    '/terms-conditions',
+    'front.termsConditions',
+    ['title' => 'Terms & Conditions']
+)->name('front.terms-conditions');
