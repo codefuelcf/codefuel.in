@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="w-full">
-            <h2 class="text-2xl text-center">Or Connect With us Over Social Media</h2>
+            <h2 class="text-2xl text-center">Or Connect With Us On Social Media</h2>
             <div class="w-full flex justify-between items-center py-10 mx-auto | md:w-1/3">
                 <div>
                     <a href="https://facebook.com/codefuelcf" target="__blank">@include('svgs.socialMedia.facebook-circle', ['class' => 'h-12 w-12'])</a>

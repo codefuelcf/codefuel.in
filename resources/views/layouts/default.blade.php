@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>{{ $title ?? '' }} - Codefuel</title>
 
-    <link rel="shortcut icon" href="{{ asset('/assets/svg/logo.svg') }}" type="image/svg">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{{ url(mix('assets/css/app.css')) }}">
     @stack('stylesheets')
 </head>
