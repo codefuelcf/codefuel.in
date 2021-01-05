@@ -37,3 +37,10 @@ Route::view(
     'front.termsConditions',
     ['title' => 'Terms & Conditions']
 )->name('front.terms-conditions');
+
+// Contact
+Route::view(
+    '/contact',
+    'front.contact',
+    ['title' => 'Contact']
+)->name('front.contact');
