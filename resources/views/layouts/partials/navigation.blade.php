@@ -2,7 +2,6 @@
     <ul class="menu list-none uppercase text-sm sm:mt-0">
         <li class="menu-item mx-4"><a href="{{ route('front.home') }}">Home</a></li>
         <li class="menu-item mx-4"><a href="{{ route('front.about') }}">About</a></li>
-        <li class="menu-item mx-4"><a href="#">Technologies</a></li>
         <li class="menu-item mx-4"><a href="{{ route('front.services') }}">Services</a></li>
         <li class="menu-item mx-4"><a href="{{ route('front.contact') }}">Contact</a></li>
     </ul>
