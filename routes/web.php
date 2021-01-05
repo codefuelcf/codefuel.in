@@ -44,3 +44,9 @@ Route::view(
     'front.contact',
     ['title' => 'Contact']
 )->name('front.contact');
+
+// Singup For Newsletter
+Route::post(
+    'register-for-newsletter',
+    [\App\Http\Controllers\NewsletterController::class, 'register']
+)->name('register-for-newsletter');

@@ -3,17 +3,16 @@
         <div class="w-full py-8 | lg:w-1/4 lg:py-0">
             <h4 class="text-xl capitalize font-bold mb-4">Want to reach us?</h4>
             <p>Want to start a project? Want to get a quote? <br />
-            Fill out our <b><a href="#">contact form</a></b> <br />
             You may also ring a bell at <b><a href="tel:+917006100459">+917006100459</a></b> <br />
-            or, email us at <b><a href="mailto:contact@codefuel.cf">contact@codefuel.cf</a></b> <br /></p>
+            or, email us at <b><a href="mailto:hey@codefuel.cf">hey@codefuel.cf</a></b> <br /></p>
         </div>
         <div class="w-full py-8 | lg:w-1/4 lg:py-0 lg:px-6">
             <h4 class="text-xl capitalize font-bold mb-4">Follow us</h4>
             <ul class="list none capitalize">
-                <li><a href="https://github.com/codefuelcf" target="_blank">Github</a></li>
-                <li><a href="https://facebook.com/codefuelcf" target="_blank">Facebook</a></li>
-                <li><a href="https://instagram.com/codefuelcf" target="_blank">Instagram</a></li>
-                <li><a href="https://twitter.com/codefuelcf" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/codefuelcf" target="__blank">Github</a></li>
+                <li><a href="https://facebook.com/codefuelcf" target="__blank">Facebook</a></li>
+                <li><a href="https://instagram.com/codefuelcf" target="__blank">Instagram</a></li>
+                <li><a href="https://twitter.com/codefuelcf" target="__blank">Twitter</a></li>
             </ul>
         </div>
         <div class="w-full py-8 | lg:w-1/4 lg:py-0 lg:px-6">
@@ -26,11 +25,17 @@
         </div>
         <div class="w-full py-8 | lg:w-1/4 lg:py-0 lg:px-6">
             <h4 class="text-xl capitalize font-bold mb-4">Newsletter</h4>
-            <p>Singup for our newsletter and receive all the latest updates from us</p>
+            <p>Register for our newsletter and receive all the latest updates from us</p>
             <div class="mt-4">
-                <input type="text" class="p-2 rounded w-full text-gray-800 outline-none" placeholder="youremail@example.com" />
-                <button class="text-white w-full hover:underline mt-1">Singup For Newsletter</button>
+                <form action="{{ route('register-for-newsletter') }}" method="post">
+                    @csrf
+                    <input type="email" class="p-2 rounded w-full text-gray-800 outline-none" name="email" placeholder="youremail@example.com" />
+                    <button type="submit" class="text-white w-full hover:underline mt-1">Register For Newsletter</button>
+                </form>
             </div>
+            @if(session('newsletterSignupMessage'))
+            <div class="mt-2 text-sm text-center">{{ session('newsletterSignupMessage') }}</div>
+            @endif
         </div>
     </div>
     <div class="mt-8 text-center">
