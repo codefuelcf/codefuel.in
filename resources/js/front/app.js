@@ -1,8 +1,13 @@
+var $ = require('jquery')
 import Typed from 'typed.js';
 
-var $ = require('jquery')
-
 $(function() {
+
+    // Navbar icon
+    $('#navbar-mobile-icon').on('click', function() {
+        $('#navbar').toggleClass('hidden');
+        $('#navbar-mobile-icon').toggleClass('transform rotate-90');
+    });
 
     // Home hero typed
     if($('#home-typed-js-hero').length)
@@ -15,11 +20,5 @@ $(function() {
             showCursor: false,
         });
     }
-
-    // Navbar icon
-    $('#navbar-mobile-icon').on('click', function() {
-        $('#navbar-mobile-icon').toggleClass('transform rotate-90');
-        $('#navbar').toggleClass('hidden');
-    });
 
 });
