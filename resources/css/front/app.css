@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Miriam Libre', sans-serif;
+    font-family: 'Miriam Libre', 'Roboto', Tahoma, sans-serif;
 }
 
 a {
