@@ -24,7 +24,9 @@
             <h4 class="text-xs">Clients</h4>
         </div>
         <div class="px-8 w-1/3">
-            <h2 class="text-xl font-bold text-primary">4+</h2>
+            <h2 class="text-xl font-bold text-primary">
+                <span x-data="{}" x-text="new Date().getFullYear() - new Date(2016, 0 , 1).getFullYear()"></span>+
+            </h2>
             <h4 class="text-xs">Years</h4>
         </div>
         <div class="px-8 w-1/3">

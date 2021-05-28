@@ -39,6 +39,6 @@
         </div>
     </div>
     <div class="mt-8 text-center">
-        <p class="inline">&copy; 2016 - 2020. All Rights Reserved. <b>Codefuel</b></p>
+        <p class="inline">&copy; 2016 - <span x-data="{}" x-text="new Date().getFullYear()"></span>. All Rights Reserved. <b>Codefuel</b></p>
     </div>
 </footer>
