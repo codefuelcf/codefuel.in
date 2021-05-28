@@ -19,7 +19,9 @@
         "postcss": "^7.0.35",
         "postcss-import": "^12.0.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
-        "typed.js": "^2.0.11",
         "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "alpinejs": "^2.8.2"
     }
 }

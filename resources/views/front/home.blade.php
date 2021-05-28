@@ -6,7 +6,7 @@
         <div class="hidden mb-8 | md:block md:px-8 md:w-1/3 md:mb-0">
             @include('svgs.logo', ['class' => 'h-32 mx-auto text-primary'])
         </div>
-        <div class="w-full text-right | md:px-8 md:w-2/3">
+        <div class="w-full text-right | md:px-8 md:w-2/3"  x-data="{}" x-init="new Typed('#home-typed-js-hero', {strings: ['Codefuel', 'Engineers', 'Developers', 'Designers',  'Creators',  'Marketers'], typeSpeed: 100, loop: true, smartBackspace: false, showCursor: false});">
             <h1 class="text-5xl">
                 Hey There, We Are <br />
             </h1>
@@ -53,3 +53,7 @@
     </section>
 </main>
 @endsection
+
+@push('javascripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+@endpush
