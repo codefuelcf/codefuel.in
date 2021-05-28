@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::view(
     '/',
     'front.home',
-    ['title' => 'Home']
+    ['title' => 'Websites, Web Applications & Designing']
 )->name('front.home');
 
 // About
