@@ -29,8 +29,8 @@
             <div class="mt-4">
                 <form action="{{ route('register-for-newsletter') }}" method="post">
                     @csrf
-                    <input type="email" class="p-2 rounded w-full text-gray-800 outline-none" name="email" placeholder="youremail@example.com" />
-                    <button type="submit" class="text-white w-full hover:underline mt-1">Register For Newsletter</button>
+                    <input type="email" class="block w-full rounded-md" name="email" placeholder="youremail@example.com" />
+                    <button type="submit" class="text-white w-full block hover:underline mt-1">Register For Newsletter</button>
                 </form>
             </div>
             @if(session('newsletterSignupMessage'))
