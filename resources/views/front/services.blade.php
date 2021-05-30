@@ -6,8 +6,8 @@
 
 @section('mainContent')
 <main>
-    <section id="services" class="px-6 py-20 | md:px-32 md:flex md:items-start">
-        <div class="w-full py-8 | md:py-0 md:px-8 md:w-1/3">
+    <section id="services" class="px-6 py-20 grid grid-cols-1 gap-4 | md:px-32 md:grid-cols-3 md:gap-8">
+        <div>
             <div class="mb-8">
                 @include('svgs.services.development', ['class' => 'h-40 mx-auto'])
             </div>
@@ -20,7 +20,7 @@
                 </p>
             </div>
         </div>
-        <div class="w-full py-8 | md:py-0 md:px-8 md:w-1/3">
+        <div>
             <div class="mb-8">
                 @include('svgs.services.designing', ['class' => 'h-40 mx-auto'])
             </div>
@@ -33,7 +33,7 @@
                 </p>
             </div>
         </div>
-        <div class="w-full py-8 | md:py-0 md:px-8 md:w-1/3">
+        <div>
             <div class="mb-8">
                 @include('svgs.services.marketing', ['class' => 'h-40 mx-auto'])
             </div>

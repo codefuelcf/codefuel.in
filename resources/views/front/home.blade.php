@@ -18,7 +18,7 @@
             </p>
         </div>
     </section>
-    <section id="our-numbers" class="px-6 py-20 text-center w-full flex items-start | md:w-1/3 md:mx-auto">
+    <section id="our-numbers" class="px-6 py-20 text-center w-full flex items-center | md:w-1/3 md:mx-auto">
         <div class="px-8 w-1/3">
             <h2 class="text-xl font-bold text-primary">10+</h2>
             <h4 class="text-xs">Clients</h4>
@@ -38,17 +38,17 @@
         <h2 class="text-md font-bold uppercase mb-8">
             Clients we have worked with
         </h2>
-        <div class="text-gray-900 | lg:flex lg:items-center lg:justify-between">
-            <div class="h-20 w-full | flex items-center lg:w-1/4">
+        <div class="text-gray-900 grid grid-cols-1 gap-4 | md:grid-cols-4 md:gap-8">
+            <div class="h-20">
                 @include('svgs.clients.royalenfield', ['class' => 'h-20 mx-auto'])
             </div>
-            <div class="h-20 w-full | flex items-center lg:w-1/4">
+            <div class="h-20">
                 @include('svgs.clients.sheengraphics', ['class' => 'h-16 mx-auto'])
             </div>
-            <div class="h-20 w-full | flex items-center lg:w-1/4">
+            <div class="h-20">
                 @include('svgs.clients.harame', ['class' => 'h-20 mx-auto'])               
             </div>
-            <div class="h-20 w-full | flex items-center lg:w-1/4">
+            <div class="h-20">
                 @include('svgs.clients.gesture', ['class' => 'h-20 mx-auto'])
             </div>
         </div>
