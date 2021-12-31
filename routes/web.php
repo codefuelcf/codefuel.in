@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
 
 // Home
@@ -7,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::view(
     '/',
     'front.home',
-    ['title' => 'Home']
+    ['title' => 'Websites, Web Applications & Designing']
 )->name('front.home');
 
 // About
@@ -45,8 +47,14 @@ Route::view(
     ['title' => 'Contact']
 )->name('front.contact');
 
+// Contact Form
+Route::post(
+    'contact',
+    ContactFormController::class
+)->name('front.contact-form');
+
 // Singup For Newsletter
 Route::post(
     'register-for-newsletter',
-    [\App\Http\Controllers\NewsletterController::class, 'register']
+    [NewsletterController::class, 'register']
 )->name('register-for-newsletter');

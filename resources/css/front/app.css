@@ -36,3 +36,17 @@ footer a {
     background-image: url('/assets/img/breadcrumb-bg-adolfo-felix.jpg');
     @apply w-full py-20 bg-cover;
 }
+
+.inline-bullets>li {
+    display: inline;
+}
+
+.inline-bullets>li::after {
+    @apply px-1;
+    content: "\2022";
+}
+
+.inline-bullets>li:last-child::after {
+    @apply p-0;
+    content: "";
+}
