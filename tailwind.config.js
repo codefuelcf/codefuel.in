@@ -1,23 +1,12 @@
-module.exports = {
-  purge: [
-    './storage/framework/views/*.php',
-    './resources/**/*.blade.php',
-    './resources/**/*.js',
-  ],
-  darkMode: false,
-  theme: {
-    extend: {
-      colors: {
-        primary: {
-          DEFAULT: '#ff3030'
-        }
-      }
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: ["./resources/**/*.blade.php", "./resources/**/*.js"],
+    theme: {
+        extend: {
+            colors: {
+                primary: "#ff3030",
+            },
+        },
     },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
-}
+    plugins: [require("@tailwindcss/forms")],
+};

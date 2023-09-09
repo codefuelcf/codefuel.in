@@ -6,7 +6,7 @@
         <div class="hidden mb-8 | md:block md:px-8 md:w-1/3 md:mb-0">
             @include('svgs.logo', ['class' => 'h-32 mx-auto text-primary'])
         </div>
-        <div class="w-full text-right | md:px-8 md:w-2/3"  x-data="{}" x-init="new Typed('#home-typed-js-hero', {strings: ['Codefuel', 'Engineers', 'Developers', 'Designers',  'Creators',  'Marketers'], typeSpeed: 100, loop: true, smartBackspace: false, showCursor: false});">
+        <div class="w-full text-right | md:px-8 md:w-2/3">
             <h1 class="text-5xl">
                 Hey There, We Are <br />
             </h1>
@@ -46,7 +46,7 @@
                 @include('svgs.clients.sheengraphics', ['class' => 'h-16 mx-auto'])
             </div>
             <div class="h-20">
-                @include('svgs.clients.harame', ['class' => 'h-20 mx-auto'])               
+                @include('svgs.clients.harame', ['class' => 'h-20 mx-auto'])
             </div>
             <div class="h-20">
                 @include('svgs.clients.gesture', ['class' => 'h-20 mx-auto'])
@@ -57,5 +57,16 @@
 @endsection
 
 @push('javascripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+@vite('resources/js/typed.js')
+<script>
+    setTimeout(function() {
+        new Typed('#home-typed-js-hero', {
+            strings: ['Codefuel', 'Engineers', 'Developers', 'Designers', 'Creators', 'Marketers'],
+            typeSpeed: 100,
+            loop: true,
+            smartBackspace: false,
+            showCursor: false
+        });
+    }, 1000);
+</script>
 @endpush
