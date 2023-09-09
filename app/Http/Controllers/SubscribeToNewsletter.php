@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\NewslettterEmails;
+use App\Models\NewsletterEmails;
 use Illuminate\Http\Request;
 
 class SubscribeToNewsletter extends Controller
@@ -13,7 +13,7 @@ class SubscribeToNewsletter extends Controller
             'email' => ['required', 'email']
         ]);
 
-        NewslettterEmails::create($validated);
+        NewsletterEmails::create($validated);
 
         return redirect()->back()->with([
             'newsletterSignupMessage' => 'Your have been subscribed successfully!'
