@@ -1,60 +1,31 @@
 <?php
 
-use App\Http\Controllers\ContactFormController;
-use App\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\{
+    SubmitContactForm,
+    SubscribeToNewsletter
+};
 
-// Home
-// About
-Route::view(
-    '/',
-    'front.home',
-    ['title' => 'Websites, Web Applications & Designing']
-)->name('front.home');
+Route::view('/', 'front.home')
+    ->name('front.home');
 
-// About
-Route::view(
-    '/about',
-    'front.about',
-    ['title' => 'About']
-)->name('front.about');
+Route::view('/about', 'front.about')
+    ->name('front.about');
 
-// Services
-Route::view(
-    '/services',
-    'front.services',
-    ['title' => 'Services']
-)->name('front.services');
+Route::view('/services', 'front.services')
+    ->name('front.services');
 
-// Privacy Policy
-Route::view(
-    '/privacy-policy',
-    'front.privacyPolicy',
-    ['title' => 'Privacy Policy']
-)->name('front.privacy-policy');
+Route::view('/privacy-policy', 'front.privacy-policy')
+    ->name('front.privacy-policy');
 
-// Terms and Conditions
-Route::view(
-    '/terms-conditions',
-    'front.termsConditions',
-    ['title' => 'Terms & Conditions']
-)->name('front.terms-conditions');
+Route::view('/terms-conditions', 'front.terms-and-conditions')
+    ->name('front.terms-conditions');
 
-// Contact
-Route::view(
-    '/contact',
-    'front.contact',
-    ['title' => 'Contact']
-)->name('front.contact');
+Route::view('/contact', 'front.contact')
+    ->name('front.contact');
 
-// Contact Form
-Route::post(
-    'contact',
-    ContactFormController::class
-)->name('front.contact-form');
+Route::post('/contact', SubmitContactForm::class)
+    ->name('front.contact.store');
 
-// Singup For Newsletter
-Route::post(
-    'register-for-newsletter',
-    [NewsletterController::class, 'register']
-)->name('register-for-newsletter');
+Route::post('/newsletter', SubscribeToNewsletter::class)
+    ->name('newsletter.store');
