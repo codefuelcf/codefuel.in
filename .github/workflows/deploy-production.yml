@@ -1,26 +1,17 @@
 name: Deploy
 
 on:
-    push:
-        branches:
-          - production
+  push:
+    branches:
+      - master
 
 jobs:
-    Deploy:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Pull and build on server
-            uses: appleboy/ssh-action@master
-            with:
-                host: ${{ secrets.SSH_HOST }}
-                username: ${{ secrets.SSH_USERNAME }}
-                key: ${{ secrets.SSH_PRIVATE_KEY }}
-                script: |
-                    cd /var/www/codefuel_cf/public_html
-                    git checkout -- .
-                    git pull "https://tauseefsshah:${{ secrets.DEPLOYMENT_TOKEN }}@github.com/tauseefsshah/codefuel.cf.git" production
-                    composer install -q --optimize-autoloader --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
-                    npm install --silent
-                    npm run build --silent
-                    php artisan migrate --force
-                    php artisan optimize
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call ploi webhook to deploy
+        uses: distributhor/workflow-webhook@v2
+        env:
+          webhook_url: ${{ secrets.PLOI_DEPLOY_WEBHOOK }}
+          webhook_secret: "no_hash_required"
