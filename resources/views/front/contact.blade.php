@@ -1,4 +1,4 @@
-@extends('layouts.default', ['title' => 'Contact'])
+@extends('front.layout', ['title' => 'Contact'])
 
 @section('mainContent')
 <x-front.breadcrumb description="Here's how to get in touch with us" />
@@ -35,19 +35,19 @@
                 </h2>
                 <div class="w-full flex justify-between items-center py-10 mx-auto | md:w-1/3">
                     <div>
-                        <a href="https://facebook.com/codefuelcf" target="__blank">@include('svgs.socialMedia.facebook-circle', ['class' => 'h-12 w-12'])</a>
+                        <a href="https://facebook.com/codefuelcf" target="__blank">@include('svgs.social-media.facebook-circle', ['class' => 'h-12 w-12'])</a>
                     </div>
                     <div>
-                        <a href="https://instagram.com/codefuelcf" target="__blank">@include('svgs.socialMedia.instagram-circle', ['class' => 'h-12 w-12'])</a>
+                        <a href="https://instagram.com/codefuelcf" target="__blank">@include('svgs.social-media.instagram-circle', ['class' => 'h-12 w-12'])</a>
                     </div>
                     <div>
-                        <a href="https://twitter.com/codefuelcf" target="__blank">@include('svgs.socialMedia.twitter-circle', ['class' => 'h-12 w-12'])</a>
+                        <a href="https://twitter.com/codefuelcf" target="__blank">@include('svgs.social-media.twitter-circle', ['class' => 'h-12 w-12'])</a>
                     </div>
                     <div>
-                        <a href="https://m.me/codefuelcf" target="__blank">@include('svgs.socialMedia.messenger-circle', ['class' => 'h-12 w-12'])</a>
+                        <a href="https://m.me/codefuelcf" target="__blank">@include('svgs.social-media.messenger-circle', ['class' => 'h-12 w-12'])</a>
                     </div>
                     <div>
-                        <a href="https://wa.me/+917006100459" target="__blank">@include('svgs.socialMedia.whatsapp-circle', ['class' => 'h-12 w-12'])</a>
+                        <a href="https://wa.me/+917006100459" target="__blank">@include('svgs.social-media.whatsapp-circle', ['class' => 'h-12 w-12'])</a>
                     </div>
                 </div>
             </div>

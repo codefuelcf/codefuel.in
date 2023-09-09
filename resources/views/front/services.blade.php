@@ -1,4 +1,4 @@
-@extends('layouts.default', ['title' => 'Services'])
+@extends('front.layout', ['title' => 'Services'])
 
 @section('mainContent')
 <x-front.breadcrumb description="Here's the range of services that we provide" />

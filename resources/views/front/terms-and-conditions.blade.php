@@ -1,4 +1,4 @@
-@extends('layouts.default', ['title' => 'Terms and Conditions'])
+@extends('front.layout', ['title' => 'Terms and Conditions'])
 
 @section('mainContent')
 <x-front.breadcrumb description="Here are all our terms and conditions" />
@@ -7,7 +7,7 @@
     <section id="about-us" class="px-6 py-20 | md:px-32">
         <div class="text-justify">
             <ol class="list-decimal list-inside">
-                <li><strong>Job Order/Contract: </strong>The client’s approval for work to commence shall be deemed a contractual agreement between the client and Codefuel. The approval for the work can be through either an email confirming back the quote (with the quote document attached) or the quote document signed by the client.<br />
+                <li><strong>Job Order/Contract: </strong>The client's approval for work to commence shall be deemed a contractual agreement between the client and Codefuel. The approval for the work can be through either an email confirming back the quote (with the quote document attached) or the quote document signed by the client.<br />
                     <b>Important:</b> Payment of the advance fee indicates that the client accepts these terms and conditions, and approves to commence the job/work.
                 </li><br />
                 <li><strong>One(1) Year Free Technical Support:</strong> Codefuel provides One(1) year free technical support for following kind of issues:
@@ -40,9 +40,9 @@
                         <li>Content presentation and design updates which were not planned/approved by client earlier.</li><br />
                     </ul>
                 </li><br />
-                <li><strong>Content:</strong> After Codefuel has delivered the website to client, client is solely responsible for the content/information/images posted on his website. If there is any error or omission by Codefuel team while uploading/posting the content/information/images on client’s website, Codefuel will correct it if reported to Codefuel representatives.</li><br />
-                <li><strong>Material: </strong>All material supplied by the client shall remain client’s property. Codefuel rightfully believes that this material belongs to the client and that it does not breach any copyright laws. Under no circumstances shall Codefuel be held responsible for any claims, damages, and loss of profit or reputation caused to client due to the use of material provided by the client.</li><br />
-                <li><strong>Domain names booked by Codefuel on behalf of client: </strong>Codefuel provides domain name consultancy if required. Domain names registered by Codefuel on the client’s behalf are property of Codefuel until client has paid for the domain booked and any fee involved.Codefuel agrees to transfer such domains to the client or his/her agent when asked to do so provided that all accounts have been settled.<b>Note:</b> Domains booked and owned by client are not subject to this term. This term applies only to those domains which are booked by Codefuel upon the request of client.</li><br />
+                <li><strong>Content:</strong> After Codefuel has delivered the website to client, client is solely responsible for the content/information/images posted on his website. If there is any error or omission by Codefuel team while uploading/posting the content/information/images on client's website, Codefuel will correct it if reported to Codefuel representatives.</li><br />
+                <li><strong>Material: </strong>All material supplied by the client shall remain client's property. Codefuel rightfully believes that this material belongs to the client and that it does not breach any copyright laws. Under no circumstances shall Codefuel be held responsible for any claims, damages, and loss of profit or reputation caused to client due to the use of material provided by the client.</li><br />
+                <li><strong>Domain names booked by Codefuel on behalf of client: </strong>Codefuel provides domain name consultancy if required. Domain names registered by Codefuel on the client's behalf are property of Codefuel until client has paid for the domain booked and any fee involved.Codefuel agrees to transfer such domains to the client or his/her agent when asked to do so provided that all accounts have been settled.<b>Note:</b> Domains booked and owned by client are not subject to this term. This term applies only to those domains which are booked by Codefuel upon the request of client.</li><br />
                 <li><strong>Travel Time and Expenses:</strong> Travelling time to and from the client premises is not generally included in our estimate. If a visit/travel is required for meeting, the client will bear all the expenses or as agreed by both the parties.</li><br />
                 <li><strong>3<sup>rd</sup> Party Add-ons/services/applications:</strong> All third party costs arising from the registration of a domain name/purchase of third party utilities/services shall be met by the Client and are payable to Codefuel before a formal application for registration is made. Examples of 3<sup>rd</sup> party fees are as under:
                     <ul class="terms_listing">
@@ -50,8 +50,8 @@
                         <li>Server Space Hosting Fees</li><br />
                         <li>SSL Certificates</li><br />
                         <li>Backup Services</li><br />
-                        <li>3<sup>rd</sup> Party APIs, if any, required by ‘Client’ to be integrated with the work ordered.</li><br />
-                        <li>3<sup>rd</sup> Party Plugins/Scripts/Applications/Software/Widgets/Services, if any, required by ‘Client’ to be integrated with the work ordered.</li><br />
+                        <li>3<sup>rd</sup> Party APIs, if any, required by ‘Client' to be integrated with the work ordered.</li><br />
+                        <li>3<sup>rd</sup> Party Plugins/Scripts/Applications/Software/Widgets/Services, if any, required by ‘Client' to be integrated with the work ordered.</li><br />
                         <li>Payment Gateways Signup and Recurring Fees</li><br />
                         <li>SMS Gateways Integration and SMS Volume Fee</li><br />
                     </ul>
@@ -66,28 +66,28 @@
                 </li><br />
                 <li><strong>Payment Terms:</strong>
                     <ul class="terms_listing">
-                        <li>Payment plan is agreed between the ‘Client’ and Codefuel based on the milestones.</li><br />
+                        <li>Payment plan is agreed between the ‘Client' and Codefuel based on the milestones.</li><br />
                         <li>Payment shall be due within 14 days of the invoice date unless specifically mentioned in the Invoice.</li><br />
                         <li>Any material previously published may be removed if payment is not received. When this occurs, a minimum charge of 1500 INR will be charged to have the site restored.</li><br />
                         <li>Accounts that have not been settled within 14 days of the date shown on the invoice will incur a late payment charge of 500 INR or 5% of the Invoiced Amount (whichever is higher), for each week delayed.</li><br />
-                        <li>In case of delay in payments beyond the due date, Codefuel reserves the right to stop the work being commenced and ‘Client’ agrees to exempt Codefuel from meeting the timelines agreed.</li><br />
+                        <li>In case of delay in payments beyond the due date, Codefuel reserves the right to stop the work being commenced and ‘Client' agrees to exempt Codefuel from meeting the timelines agreed.</li><br />
                     </ul>
                 </li><br />
                 <li><strong>Cancellation: Both the parties reserve the right to cancel the project at any stage.</strong>
                     <ul class="terms_listing">
                         <li>In case the project is cancelled by Client, the payments made for the project can be refunded to the client after deducting the upfront payment amount received for Initiation of the project and the other payments received against the milestones completed.</li><br />
-                        <li>In case the project is cancelled by Codefuel, the payments made for the project can be refunded after deducting the payment amount for project milestones delivered to client. After the payments are settled between the two parties – Codefuel shall transfer to ‘Client’ &#8211; all the documents, designs and scripts produced for the project.</li><br />
+                        <li>In case the project is cancelled by Codefuel, the payments made for the project can be refunded after deducting the payment amount for project milestones delivered to client. After the payments are settled between the two parties – Codefuel shall transfer to ‘Client' &#8211; all the documents, designs and scripts produced for the project.</li><br />
                     </ul>
                 </li><br />
                 <li><strong>Delayed Response From Client Side:</strong> Unreasonable delays from client side in providing the required feedback/information/data to finish the project shall exempt Codefuel from meeting the timelines mentioned in the quote. In case client does not provide required details/data/information within 15 working days, client agrees that the payments made towards the project will be forfeited and retained by Codefuel as full and final settlement against the work completed till date. Codefuel shall not be liable to deliver any files to client if client is not traceable or not responsive for 15 working days.</li><br />
                 <li><strong>Escalation:</strong> Codefuel ensures you get right assistance to resolve issues in a timely manner. If your concerns are not entertained to your satisfaction, you can escalate critical issues to higher level of management. You may follow the below-mentioned escalation matrix to avoid any delay or discomfort in the event of dissatisfaction.
                     <ul class="lower-alpha">
                         <li><strong>First Level Escalation:</strong> In case of delay in project timeline or unsatisfactory response from your associated Project Manager/Business Analyst, You may escalate your case to Chief Technology Officer or Project Manager and expect a response within next 2 working days.</li><br />
-                        <li><strong>Final Escalation:</strong> If you don’t receive a satisfactory solution from any of the team members following the first level of escalation, or haven&#8217;t received a reply within 5 business days after submitting your Feedback/Query/Complaint, you may escalate your case to our Chief Executive Officer or Chief Operating Officer. Rest assured that immediate action will be taken.</li><br />
+                        <li><strong>Final Escalation:</strong> If you don't receive a satisfactory solution from any of the team members following the first level of escalation, or haven&#8217;t received a reply within 5 business days after submitting your Feedback/Query/Complaint, you may escalate your case to our Chief Executive Officer or Chief Operating Officer. Rest assured that immediate action will be taken.</li><br />
                     </ul>
                 </li><br />
                 <li><strong>Time Estimates:</strong> Client agrees that stipulated timelines cannot be met if the project scope is changed by client once the project scope document is finalized. Client agrees not to change the requirements without extending the original agreed timelines by minimum 1 week against each change request.</li><br />
-                <li><strong>Share in profits from business or sale of business: </strong>After client makes the agreed payment for the project, Codefuel will not claim share in client’s profits from business or from sale of business to some other company, unless negotiated otherwise.</li><br />
+                <li><strong>Share in profits from business or sale of business: </strong>After client makes the agreed payment for the project, Codefuel will not claim share in client's profits from business or from sale of business to some other company, unless negotiated otherwise.</li><br />
                 <li><strong>Copyright/Ownership Rights:</strong> Codefuel will retain the copyright of any material, including design, artwork and the source code, created for the client by Codefuel. Codefuel reserves the right to retain the copyright on all material created by Codefuel unless otherwise agreed between the two parties in writing. As per the agreed terms client owns rights on following items:
                     <ul class="terms_listing">
                         <li>Logo/Graphics/Pictures/Images supplied by client – Yes</li><br />

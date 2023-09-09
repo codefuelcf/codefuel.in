@@ -1,4 +1,4 @@
-@extends('layouts.default', ['title' => 'Privacy Policy'])
+@extends('front.layout', ['title' => 'Privacy Policy'])
 
 @section('mainContent')
 <x-front.breadcrumb description="Know more about our privacy policy" />

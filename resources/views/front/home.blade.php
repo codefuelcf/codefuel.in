@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('front.layout')
 
 @section('mainContent')
 <main>
