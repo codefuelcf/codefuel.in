@@ -20,15 +20,9 @@
 </head>
 
 <body>
-    @include('layouts.partials.header')
-
-    @yield('beforeMainContent')
-
+    <x-front.header />
     @yield('mainContent')
-
-    @yield('afterMainContent')
-
-    @include('layouts.partials.footer')
+    <x-front.footer />
 
     @vite('resources/js/front.js')
     @stack('javascripts')
