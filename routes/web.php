@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
-    ContactFormController,
-    NewsletterController
+    SubmitContactForm,
+    SubscribeToNewsletter
 };
 
 Route::view('/', 'front.home')
@@ -25,8 +25,8 @@ Route::view('/terms-conditions', 'front.terms-and-conditions')
 Route::view('/contact', 'front.contact')
     ->name('front.contact');
 
-Route::post('/contact', ContactFormController::class)
+Route::post('/contact', SubmitContactForm::class)
     ->name('front.contact-form');
 
-Route::post('/register-for-newsletter', [NewsletterController::class, 'register'])
+Route::post('/register-for-newsletter', SubscribeToNewsletter::class)
     ->name('register-for-newsletter');
