@@ -13,7 +13,7 @@ class CreateNewslettterEmailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('newslettter_emails', function (Blueprint $table) {
+        Schema::create('newsletter_emails', function (Blueprint $table) {
             $table->id();
             $table->string('email', 250);
             $table->timestamps();
