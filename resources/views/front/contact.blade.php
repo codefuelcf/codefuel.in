@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default', ['title' => 'Contact'])
 
 @section('beforeMainContent')
     @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Here\'s how to get in touch with us'])

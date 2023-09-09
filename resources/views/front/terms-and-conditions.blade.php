@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default', ['title' => 'Terms and Conditions'])
 
 @section('beforeMainContent')
     @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Here are all our terms and conditions'])

@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default', ['title' => 'Privacy Policy'])
 
 @section('beforeMainContent')
     @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Know more about our privacy policy'])

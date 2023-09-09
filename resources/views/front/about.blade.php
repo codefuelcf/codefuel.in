@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default', ['title' => 'About'])
 
 @section('beforeMainContent')
     @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Get to know more about us'])
