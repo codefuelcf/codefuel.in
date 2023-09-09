@@ -27,15 +27,12 @@
             <h4 class="text-xl capitalize font-bold mb-4">Newsletter</h4>
             <p>Register for our newsletter and receive all the latest updates from us</p>
             <div class="mt-4">
-                <form action="{{ route('register-for-newsletter') }}" method="post">
+                <form action="{{ route('newsletter.store') }}" method="post">
                     @csrf
                     <input type="email" class="block w-full text-gray-900 rounded-md" name="email" placeholder="youremail@example.com" />
                     <button type="submit" class="text-white w-full block hover:underline mt-1">Register For Newsletter</button>
                 </form>
             </div>
-            @if(session('newsletterSignupMessage'))
-            <div class="mt-2 text-sm text-center">{{ session('newsletterSignupMessage') }}</div>
-            @endif
         </div>
     </div>
     <div class="mt-8 text-center">

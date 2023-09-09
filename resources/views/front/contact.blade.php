@@ -56,7 +56,7 @@
                     Or Simply Fill This Form And We'll Get Back To You
                 </h2>
                 <div class="w-full py-10 mx-auto | md:w-1/3">
-                    <form action="{{ route('front.contact-form') }}" method="post">
+                    <form action="{{ route('front.contact.store') }}" method="post">
                         @csrf
                         <div class="grid gap-4">
                             <input class="block w-full rounded-md" type="text" name="name" placeholder="Your Name" />

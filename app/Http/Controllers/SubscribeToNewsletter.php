@@ -16,7 +16,8 @@ class SubscribeToNewsletter extends Controller
         NewsletterEmails::create($validated);
 
         return redirect()->back()->with([
-            'newsletterSignupMessage' => 'Your have been subscribed successfully!'
+            'messageType' => 'success',
+            'message' => 'Your have been subscribed successfully!',
         ]);
     }
 }

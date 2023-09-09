@@ -25,7 +25,7 @@ Route::view('/contact', 'front.contact')
     ->name('front.contact');
 
 Route::post('/contact', SubmitContactForm::class)
-    ->name('front.contact-form');
+    ->name('front.contact.store');
 
-Route::post('/register-for-newsletter', SubscribeToNewsletter::class)
-    ->name('register-for-newsletter');
+Route::post('/newsletter', SubscribeToNewsletter::class)
+    ->name('newsletter.store');
