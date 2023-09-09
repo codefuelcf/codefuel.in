@@ -21,6 +21,6 @@ jobs:
                     git pull "https://tauseefsshah:${{ secrets.DEPLOYMENT_TOKEN }}@github.com/tauseefsshah/codefuel.cf.git" production
                     composer install -q --optimize-autoloader --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
                     npm install --silent
-                    npm run prod --silent
+                    npm run build --silent
                     php artisan migrate --force
                     php artisan optimize
