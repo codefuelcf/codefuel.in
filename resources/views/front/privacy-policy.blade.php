@@ -1,10 +1,8 @@
-@extends('layouts.default')
-
-@section('beforeMainContent')
-    @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Know more about our privacy policy'])
-@endsection
+@extends('front.layout', ['title' => 'Privacy Policy'])
 
 @section('mainContent')
+<x-front.breadcrumb description="Know more about our privacy policy" />
+
 <main>
     <section id="about-us" class="px-6 py-20 | md:px-32">
         <div class="text-justify">
@@ -13,16 +11,16 @@
             <h4 class="text-2xl font-bold mt-8">What do we use your information for?</h4>
             <p>Any of the information we collect from you may be used in one of the following ways:</p>
             <p>To personalize your experience<br /><br />
-            Your information helps us to better respond to your individual needs</p>
+                Your information helps us to better respond to your individual needs</p>
             <p>To improve our website<br /><br />
-            We continually strive to improve our website offerings based on the information and feedback we receive from you</p>
+                We continually strive to improve our website offerings based on the information and feedback we receive from you</p>
             <p>To improve customer service<br /><br />
-            Your information helps us to more effectively respond to your customer service requests and support needs</p>
+                Your information helps us to more effectively respond to your customer service requests and support needs</p>
             <p>To process transactions<br /><br />
-            Your information, whether public or private, will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without your consent, other than for the express purpose of delivering the purchased product or service requested.</p>
+                Your information, whether public or private, will not be sold, exchanged, transferred, or given to any other company for any reason whatsoever, without your consent, other than for the express purpose of delivering the purchased product or service requested.</p>
             <p>To administer a contest, promotion, survey or other site feature</p>
             <p>To send periodic emails<br /><br />
-            The email address you provide for order processing, may be used to send you information and updates pertaining to your order, in addition to receiving occasional company news, updates, related product or service information, etc.</p>
+                The email address you provide for order processing, may be used to send you information and updates pertaining to your order, in addition to receiving occasional company news, updates, related product or service information, etc.</p>
             <h4 class="text-2xl font-bold mt-8">How do we protect your information?</h4>
             <p>We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information.</p>
             <h4 class="text-2xl font-bold mt-8">Do we use cookies?</h4>
@@ -46,7 +44,6 @@
             <h4 class="text-2xl font-bold mt-8">Contacting Us</h4>
             <p>If there are any questions regarding this privacy policy you may contact us using the contact form or our contact details mentioned on our contact page.</p>
         </div>
-
     </section>
 </main>
 @endsection

@@ -1,10 +1,8 @@
-@extends('layouts.default')
-
-@section('beforeMainContent')
-    @include('layouts.partials.breadcrumb', ['breadcrumbPageDescription' => 'Here\'s the range of services that we provide'])
-@endsection
+@extends('front.layout', ['title' => 'Services'])
 
 @section('mainContent')
+<x-front.breadcrumb description="Here's the range of services that we provide" />
+
 <main>
     <section id="services" class="px-6 py-20 grid grid-cols-1 gap-4 | md:px-32 md:grid-cols-3 md:gap-8">
         <div>
