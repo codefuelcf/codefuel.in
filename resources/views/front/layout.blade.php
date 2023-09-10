@@ -12,9 +12,12 @@
         :description="$description ?? 'Codefuel is a creative digital agency providing development, designing and hosting solutions'"
     />
 
-    <title>Codefuel - {{ $title ?? 'Websites, Web Application & Designing' }}</title>
+    <link rel="shortcut icon" href="{{ Vite::asset('resources/img/favicon/favicon.ico') }}" type="image/x-icon">
+    
+    <title>
+        Codefuel - {{ $title ?? 'Websites, Web Application & Designing' }}
+    </title>
 
-    <link rel="shortcut icon" href="{{ Vite::asset('resources/favicon.ico') }}" type="image/x-icon">
     @vite(['resources/css/tailwind.css', 'resources/css/front.css'])
     @stack('stylesheets')
 </head>
