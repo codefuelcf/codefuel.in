@@ -34,7 +34,6 @@
     @stack('javascripts')
 
     <x-front.google-analytics-tag />
-
 </body>
 
 </html>
