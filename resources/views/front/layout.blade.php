@@ -18,7 +18,7 @@
     />
 
     <title>
-        Codefuel - {{ $title ?? 'Websites, Web Application & Designing' }}
+        {{ $title ?? 'Websites, Web Application & Designing' }} | Codefuel
     </title>
 
     @vite(['resources/css/tailwind.css', 'resources/css/front.css'])

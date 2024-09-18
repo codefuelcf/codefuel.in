@@ -19,7 +19,10 @@ Route::view('/privacy-policy', 'front.privacy-policy')
     ->name('front.privacy-policy');
 
 Route::view('/terms-conditions', 'front.terms-and-conditions')
-    ->name('front.terms-conditions');
+    ->name('front.terms-and-conditions');
+
+Route::view('/returns-and-refunds', 'front.returns-and-refunds')
+    ->name('front.returns-and-refunds');
 
 Route::view('/contact', 'front.contact')
     ->name('front.contact');
