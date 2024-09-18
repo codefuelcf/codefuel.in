@@ -23,7 +23,7 @@
     <section id="our-numbers" class="px-6 py-20 text-center w-full | md:w-1/3 md:mx-auto">
         <div class="container mx-auto flex items-center gap-8">
             <div class="flex-1">
-                <h2 class="text-xl font-bold text-primary">10+</h2>
+                <h2 class="text-xl font-bold text-primary">15+</h2>
                 <h4 class="text-xs">Clients</h4>
             </div>
             <div class="flex-1">
@@ -33,7 +33,7 @@
                 <h4 class="text-xs">Years</h4>
             </div>
             <div class="flex-1">
-                <h2 class="text-xl font-bold text-primary">25+</h2>
+                <h2 class="text-xl font-bold text-primary">50+</h2>
                 <h4 class="text-xs">Projects</h4>
             </div>
         </div>

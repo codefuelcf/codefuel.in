@@ -19,7 +19,8 @@
             <ul class="list none capitalize">
                 <li><a href="{{ route('front.about') }}">About</a></li>
                 <li><a href="{{ route('front.privacy-policy') }}">Privacy Policy</a></li>
-                <li><a href="{{ route('front.terms-conditions') }}">Terms & Conditions</a></li>
+                <li><a href="{{ route('front.terms-and-conditions') }}">Terms & Conditions</a></li>
+                <li><a href="{{ route('front.returns-and-refunds') }}">Return & Refunds</a></li>
             </ul>
         </div>
         <div>

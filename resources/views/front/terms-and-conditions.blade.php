@@ -11,13 +11,13 @@
                     <b>Important:</b> Payment of the advance fee indicates that the client accepts these terms and conditions, and approves to commence the job/work.
                 </li><br />
                 <li><strong>One(1) Year Free Technical Support:</strong> Codefuel provides One(1) year free technical support for following kind of issues:
-                    <ul>
+                    <ul class="list-disc ml-4 | md:ml-12">
                         <li>Logical Bugs/Calculation related errors/bugs</li><br />
                         <li>Server side scripting/programming errors/bugs</li><br />
                         <li>Connection errors/API Integration Errors</li><br />
                     </ul>
                     <p>Above support is not available if the errors/bugs arise due to any external entity. Examples:</p>
-                    <ul>
+                    <ul class="list-disc ml-4 | md:ml-12">
                         <li>Server or software or application or extension downgrades or upgrades</li><br />
                         <li>Edits done by any external entity/person/professional in the code/scripts delivered by us.</li><br />
                         <li>Operating System or Browser Version Downgrades/Upgrades</li><br />
@@ -27,7 +27,7 @@
                 <li><strong>Photography and graphics:</strong> Codefuel may use stock photographs and images while creating the website. Images and graphics purchased from stock libraries or photographs taken by professional from Codefuel are not generally included in the quote and will be invoiced separately. Codefuel will keep the client updated about the stock images being used or professional photogtaphy conducted and the cost involved before raising the invoice.</li><br />
                 <li><strong>Cross Browser compatibility: </strong>Codefuel makes every effort to design pages that work flawlessly on most popular current browsers i.e. IE11 and latest version of FireFox/Chrome released on the date of project agreement. We however cannot be held responsible for pages that do not display acceptably in new versions of browsers released after pages have been designed. <i>IE10 and older IE versions are outdated browsers however we still keep backword compatibility in mind to max possible level. We recommend using latest version of Chrome or Firefox instead of older versions of Microsoft Internet Explorer.</i></li><br />
                 <li><strong>Search Engine Submission/Optimization:</strong> Following services are not part of the project unless agreed otherwise in writing:
-                    <ul>
+                    <ul class="list-disc ml-4 | md:ml-12">
                         <li>Submission of websites on different search engines.</li><br />
                         <li>Securing good ranking of your website on different search engines.</li><br />
                         <li>Search Engine Optimization – On Page/Off Page.</li><br />
@@ -45,13 +45,13 @@
                 <li><strong>Domain names booked by Codefuel on behalf of client: </strong>Codefuel provides domain name consultancy if required. Domain names registered by Codefuel on the client's behalf are property of Codefuel until client has paid for the domain booked and any fee involved.Codefuel agrees to transfer such domains to the client or his/her agent when asked to do so provided that all accounts have been settled.<b>Note:</b> Domains booked and owned by client are not subject to this term. This term applies only to those domains which are booked by Codefuel upon the request of client.</li><br />
                 <li><strong>Travel Time and Expenses:</strong> Travelling time to and from the client premises is not generally included in our estimate. If a visit/travel is required for meeting, the client will bear all the expenses or as agreed by both the parties.</li><br />
                 <li><strong>3<sup>rd</sup> Party Add-ons/services/applications:</strong> All third party costs arising from the registration of a domain name/purchase of third party utilities/services shall be met by the Client and are payable to Codefuel before a formal application for registration is made. Examples of 3<sup>rd</sup> party fees are as under:
-                    <ul class="terms_listing">
+                    <ul class="list-disc ml-4 | md:ml-12">
                         <li>Domain Names</li><br />
                         <li>Server Space Hosting Fees</li><br />
                         <li>SSL Certificates</li><br />
                         <li>Backup Services</li><br />
-                        <li>3<sup>rd</sup> Party APIs, if any, required by ‘Client' to be integrated with the work ordered.</li><br />
-                        <li>3<sup>rd</sup> Party Plugins/Scripts/Applications/Software/Widgets/Services, if any, required by ‘Client' to be integrated with the work ordered.</li><br />
+                        <li>3<sup>rd</sup> Party APIs, if any, required by 'Client' to be integrated with the work ordered.</li><br />
+                        <li>3<sup>rd</sup> Party Plugins / Scripts / Applications / Software / Widgets / Services, if any, required by 'Client' to be integrated with the work ordered.</li><br />
                         <li>Payment Gateways Signup and Recurring Fees</li><br />
                         <li>SMS Gateways Integration and SMS Volume Fee</li><br />
                     </ul>
