@@ -1,10 +1,9 @@
 <footer class="bg-gray-800 py-10 px-6 text-white | md:px-32">
-    <div class="grid grid-cols-1 gap-4 | md:grid-cols-4 md:gap-8">
+    <div class="container mx-auto grid grid-cols-1 gap-4 | md:grid-cols-4 md:gap-8">
         <div>
             <h4 class="text-xl capitalize font-bold mb-4">Want to reach us?</h4>
             <p>Want to start a project? Want to get a quote? <br />
-                You may also ring a bell at <b><a href="tel:+917006100459">+917006100459</a></b> <br />
-                or, email us at <b><a href="mailto:hey@codefuel.cf">hey@codefuel.cf</a></b> <br /></p>
+                You may also reach out to us at <b><a href="mailto:hello@codefuel.in">hello@codefuel.in</a></b> <br /></p>
         </div>
         <div>
             <h4 class="text-xl capitalize font-bold mb-4">Follow us</h4>

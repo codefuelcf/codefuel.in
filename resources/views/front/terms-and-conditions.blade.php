@@ -5,7 +5,7 @@
 
 <main>
     <section id="about-us" class="px-6 py-20 | md:px-32">
-        <div class="text-justify">
+        <div class="container mx-auto text-justify">
             <ol class="list-decimal list-inside">
                 <li><strong>Job Order/Contract: </strong>The client's approval for work to commence shall be deemed a contractual agreement between the client and Codefuel. The approval for the work can be through either an email confirming back the quote (with the quote document attached) or the quote document signed by the client.<br />
                     <b>Important:</b> Payment of the advance fee indicates that the client accepts these terms and conditions, and approves to commence the job/work.

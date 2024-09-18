@@ -5,7 +5,7 @@
 
 <main>
     <section id="about-us" class="px-6 py-20 | md:px-32">
-        <div class="text-justify">
+        <div class="container mx-auto text-justify">
             <h4 class="text-2xl font-bold">What information do we collect?</h4>
             <p>We collect information from you when you fill out a form. When ordering or registering on our site, as appropriate, you may be asked to enter your: name, e-mail address, mailing address, phone number or credit card information. You may, however, visit our site anonymously.</p>
             <h4 class="text-2xl font-bold mt-8">What do we use your information for?</h4>
@@ -36,7 +36,7 @@
             <h4 class="text-2xl font-bold mt-8">Online Privacy Policy Only</h4>
             <p>This online privacy policy applies only to information collected through our website and not to information collected offline.</p>
             <h4 class="text-2xl font-bold mt-8">Terms and Conditions</h4>
-            <p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at <a href="https://codefuel.cf">https://www.codefuel.cf</a></p>
+            <p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at <a href="https://codefuel.in">https://www.codefuel.in</a></p>
             <h4 class="text-2xl font-bold mt-8">Your Consent</h4>
             <p>By using our site, products and services, you consent to our online privacy policy.</p>
             <h4 class="text-2xl font-bold mt-8">Changes to our Privacy Policy</h4>
