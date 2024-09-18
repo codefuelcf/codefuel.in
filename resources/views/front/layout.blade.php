@@ -33,6 +33,8 @@
     @vite('resources/js/front.js')
     @stack('javascripts')
 
+    <x-front.google-analytics-tag />
+
 </body>
 
 </html>
