@@ -32,3 +32,5 @@ Route::post('/contact', SubmitContactForm::class)
 
 Route::post('/newsletter', SubscribeToNewsletter::class)
     ->name('newsletter.store');
+
+Route::inertia('/test', 'Home');
