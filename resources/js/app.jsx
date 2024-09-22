@@ -1,5 +1,4 @@
 import "../css/front.css";
-import "../css/tailwind.css";
 
 import { createInertiaApp } from "@inertiajs/react";
 import { createRoot } from "react-dom/client";

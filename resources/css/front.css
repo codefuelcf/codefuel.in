@@ -1,57 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Instrument+Serif&display=swap');
 
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-primary hover:underline;
+  }
+
+  footer a {
+    @apply text-white hover:no-underline;
+  }
+
+  .container {
+    @apply !max-w-screen-lg mx-auto px-6 md:px-24;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
     background-image:
-        linear-gradient(to right, rgb(250 250 250) 1px, transparent 1px),
-        linear-gradient(to bottom, rgb(250 250 250) 1px, transparent 1px);
+      linear-gradient(to right, rgb(245 245 245) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(245 245 245) 1px, transparent 1px);
     background-size: 1rem 1rem;
     background-position: center center;
-}
+  }
 
-
-a {
-    @apply text-primary hover:underline;
-}
-
-footer a {
-    @apply text-white hover:no-underline;
-}
-
-.container {
-    @apply max-w-screen-xl;
-}
-
-.menu-item {
+  .menu-item {
     @apply block py-2 lg:py-0 lg:inline-block;
-}
+  }
 
-.menu .menu-item:first-child {
+  .menu .menu-item:first-child {
     @apply lg:ml-0;
-}
+  }
 
-.menu .menu-item:last-child {
+  .menu .menu-item:last-child {
     @apply lg:mr-0;
-}
+  }
 
-.menu-item a {
+  .menu-item a {
     @apply text-black hover:text-primary hover:no-underline;
-}
+  }
 
-.breadcrumb {
+  .breadcrumb {
     background-image: url('../img/breadcrumb-bg-adolfo-felix.jpg');
     @apply w-full py-20 bg-cover;
-}
+  }
 
-.inline-bullets>li {
+  .inline-bullets>li {
     display: inline;
-}
+  }
 
-.inline-bullets>li::after {
+  .inline-bullets>li::after {
     @apply px-1;
     content: "\2022";
-}
+  }
 
-.inline-bullets>li:last-child::after {
+  .inline-bullets>li:last-child::after {
     @apply p-0;
     content: "";
+  }
 }
