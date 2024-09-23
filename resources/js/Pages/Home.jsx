@@ -13,7 +13,7 @@ export default function () {
         <section id="masthead" className="bg-grid py-20">
           <div className="container flex flex-col gap-12">
             <div id="masthead-title">
-              <h1 className="text-center text-8xl font-bold -rotate-1">
+              <h1 className="text-center text-9xl font-bold -rotate-1">
                 Turn your{" "}
                 <span className="underline decoration-primary">ideas</span> in
                 to a{" "}
@@ -54,11 +54,9 @@ export default function () {
           </div>
         </section>
 
-        <section id="testimonials"></section>
-
         <section
           id="clients"
-          className="bg-gradient-to-b from-gray-50 to-white border-t-2 border-gray-100 px-6 py-20 bg-white text-center | md:px-32"
+          className="py-20 bg-white text-center container"
         >
           <div className="grid grid-cols-2 gap-8 items-center md:grid-cols-6">
             {[
@@ -69,8 +67,51 @@ export default function () {
               SheenGraphics,
               DelhiPublicSchool,
             ].map((el, index) => (
-              <img key={index} src={el} alt="Flynterest" className="size-32 grayscale hover:grayscale-0" />
+              <img
+                key={index}
+                src={el}
+                alt="Flynterest"
+                className="size-24 grayscale hover:grayscale-0"
+              />
             ))}
+          </div>
+        </section>
+
+        <section id="testimonials" className="bg-grid py-20">
+          <div className="container">
+            <h4 className="text-center mb-8">Our Happy Clients Say About Us</h4>
+            <div className="grid grid-cols-1 gap-4 text-xs md:grid-cols-3">
+              {[
+                {
+                  photo: DelhiPublicSchool,
+                  testimonial:
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut facilis cupiditate minus.",
+                  name: "Tauseef Shah",
+                  brand: "Flynterest",
+                },
+                {
+                  photo: DelhiPublicSchool,
+                  testimonial:
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut facilis cupiditate minus.",
+                  name: "Tauseef Shah",
+                  brand: "Flynterest",
+                },
+                {
+                  photo: DelhiPublicSchool,
+                  testimonial:
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut facilis cupiditate minus.",
+                  name: "Tauseef Shah",
+                  brand: "Flynterest",
+                },
+              ].map((el, index) => (
+                <div
+                  key={index}
+                  className="rounded-full px-6 py-4 flex gap-2 bg-white"
+                >
+                  <div className="">{el.testimonial}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </main>
