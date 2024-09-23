@@ -21,8 +21,8 @@
 @layer utilities {
   .bg-grid {
     background-image:
-      linear-gradient(to right, rgb(245 245 245) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(245 245 245) 1px, transparent 1px);
+      linear-gradient(to right, rgb(248 248 248) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(248 248 248) 1px, transparent 1px);
     background-size: 1rem 1rem;
     background-position: center center;
   }

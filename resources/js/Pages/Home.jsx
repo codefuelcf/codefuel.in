@@ -54,10 +54,7 @@ export default function () {
           </div>
         </section>
 
-        <section
-          id="clients"
-          className="py-20 bg-white text-center container"
-        >
+        <section id="clients" className="py-20 bg-white text-center container">
           <div className="grid grid-cols-2 gap-8 items-center md:grid-cols-6">
             {[
               Vivo,
@@ -109,6 +106,45 @@ export default function () {
                   className="rounded-full px-6 py-4 flex gap-2 bg-white"
                 >
                   <div className="">{el.testimonial}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="how-we-work" className="bg-grid py-20">
+          <div className="container">
+            <div className="flex flex-col gap-32">
+              {[
+                {
+                  title: "Ideation",
+                  content:
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                },
+                {
+                  title: "Deisnging and Prototyping",
+                  content:
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                },
+                {
+                  title: "Delivery",
+                  content:
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                },
+              ].map((el, index) => (
+                <div
+                  className="grid grid-cols-1 items-center gap-8 md:grid-cols-2"
+                  key={index}
+                >
+                  <div className={index % 2 != 0 ? "order-last" : ""}>
+                    <h2 className="text-3xl underline decoration-red-500 transform -rotate-2 mb-4 underline-offset-8 font-bold lg:text-5xl">
+                      {el.title}
+                    </h2>
+                    <p className="text-xl text-black/50">{el.content}</p>
+                  </div>
+                  <div>
+                    <img src={Flynterest} className="w-auto h-60 mx-auto" />
+                  </div>
                 </div>
               ))}
             </div>
