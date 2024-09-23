@@ -40,15 +40,12 @@ export default function ({ children }) {
             className={'inset-0 absolute top-20 w-full bg-white z-50 | lg:inset-auto lg:top-auto lg:block lg:static lg:m-0 lg:w-auto ' + (!mobileNavigationOpen ? 'hidden' : '')}
           >
             <nav className=" bg-white py-4 px-6 | md:px-32 | lg:px-0 lg:py-0">
-              <ul className="menu list-none uppercase text-sm sm:mt-0">
+              <ul className="menu list-none text-sm sm:mt-0">
                 <li className="menu-item mx-4">
                   <a href="{{ route('front.home') }}">Home</a>
                 </li>
                 <li className="menu-item mx-4">
-                  <a href="{{ route('front.about') }}">About</a>
-                </li>
-                <li className="menu-item mx-4">
-                  <a href="{{ route('front.services') }}">Services</a>
+                  <a href="{{ route('front.services') }}">Pricing</a>
                 </li>
                 <li className="menu-item mx-4">
                   <a href="{{ route('front.contact') }}">Contact</a>

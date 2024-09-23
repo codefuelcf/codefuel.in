@@ -161,11 +161,11 @@ export default function () {
         <section id="how-we-work" className="bg-primary text-white py-20">
           <div className="container">
             <h2 className="text-4xl heading-text mb-8 !decoration-black">
-              How we approach work
+              Why you might like to partner with us
             </h2>
             <h3 className="text-xl mb-8">
-              We only focus on certain areas, giving you the results that really
-              matter. We won't offer you something we don't excel in.
+              How we approach work We only focus on certain areas, giving you
+              the results that really matter. We won't 
             </h3>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
               {[
@@ -175,17 +175,17 @@ export default function () {
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
                 {
-                  title: "2) Planning",
+                  title: "2) Prototyping",
                   content:
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
                 {
-                  title: "3) Prototyping",
+                  title: "3) Implementation",
                   content:
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
                 {
-                  title: "4) Delivery",
+                  title: "4) Deployment",
                   content:
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
