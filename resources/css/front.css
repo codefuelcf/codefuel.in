@@ -27,6 +27,10 @@
     background-position: center center;
   }
 
+  .heading-text {
+    @apply font-bold -rotate-2 underline decoration-primary underline-offset-4 decoration-4;
+  }
+
   .menu-item {
     @apply block py-2 lg:py-0 lg:inline-block;
   }

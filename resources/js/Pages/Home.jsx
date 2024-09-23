@@ -54,119 +54,141 @@ export default function () {
           </div>
         </section>
 
-        <section id="clients" className="py-20 bg-white text-center container">
-          <div className="grid grid-cols-2 gap-8 items-center md:grid-cols-6">
-            {[
-              Vivo,
-              Flynterest,
-              DelhiPublicSchool,
-              RoyalEnfield,
-              SheenGraphics,
-              DelhiPublicSchool,
-            ].map((el, index) => (
-              <img
-                key={index}
-                src={el}
-                alt="Flynterest"
-                className="size-24 grayscale hover:grayscale-0"
-              />
-            ))}
+        <section id="clients" className="py-20 bg-white container">
+          <h2 className="text-4xl heading-text mb-8">
+            Trusted By All Sizes Since 2018
+          </h2>
+          <h3 className="text-xl mb-8">
+            We've had the privilege of working with a diverse range of clients,
+            from ambitious startups to top global brands.
+          </h3>
+
+          <div className="grid grid-cols-2 gap-8 items-center md:grid-cols-4">
+            {[Vivo, RoyalEnfield, SheenGraphics, DelhiPublicSchool].map(
+              (el, index) => (
+                <img
+                  key={index}
+                  src={el}
+                  alt="Flynterest"
+                  className="size-32 grayscale hover:grayscale-0"
+                />
+              )
+            )}
           </div>
         </section>
 
-        <section id="testimonials" className="bg-grid py-20">
+        <section id="testimonials" className="bg-primary py-20">
           <div className="container">
-            <h4 className="text-center mb-8">Our Happy Clients Say About Us</h4>
-            <div className="grid grid-cols-1 gap-4 text-xs md:grid-cols-3">
+            <h4 className="text-4xl heading-text mb-8 !decoration-black text-white">
+              Our Happy Clients Say About Us
+            </h4>
+            <div className="grid grid-cols-1 gap-4 text-sm md:grid-cols-3">
               {[
                 {
-                  photo: DelhiPublicSchool,
                   testimonial:
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut facilis cupiditate minus.",
-                  name: "Tauseef Shah",
-                  brand: "Flynterest",
+                    "Working with Codefuel was a game-changer. Their technical solutions have streamlined our operations and boosted productivity.",
+                  name: "Ehsan Qudussi",
+                  designation: "CTO",
+                  brand: "Delhi Public School, Srinagar",
                 },
                 {
-                  photo: DelhiPublicSchool,
                   testimonial:
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut facilis cupiditate minus.",
-                  name: "Tauseef Shah",
-                  brand: "Flynterest",
+                    "The web application built for us to manage rewards is great. It works efficiently, is easy to use and is completely reliable.",
+                  name: "Sahil Gupta",
+                  designation: "JK Sales Head",
+                  brand: "Vivo India",
                 },
                 {
-                  photo: DelhiPublicSchool,
                   testimonial:
-                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut facilis cupiditate minus.",
-                  name: "Tauseef Shah",
-                  brand: "Flynterest",
+                    "People we trust for quality work. Codefuel's proffesionalism and attention to detail is unmatched.",
+                  name: "Irfan Amin",
+                  designation: "MD",
+                  brand: "Sheen Graphics",
                 },
               ].map((el, index) => (
-                <div
-                  key={index}
-                  className="rounded-full px-6 py-4 flex gap-2 bg-white"
-                >
-                  <div className="">{el.testimonial}</div>
+                <div key={index} className="px-6 py-4 bg-white">
+                  <p className="italic">"{el.testimonial}"</p>
+                  <div className="text-black/50 mt-4 font-medium">
+                    <p>{el.name}</p>
+                    <p>
+                      {el.designation} - {el.brand}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="good-at-few-things" className="bg-white py-20">
+        <section id="good-at-few-things" className="bg-grid py-20">
           <div className="container">
-            <h2>We are good at a few things</h2>
-            <h3>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-              officiis.
+            <h2 className="text-4xl heading-text mb-8">
+              We are good at a few things
+            </h2>
+            <h3 className="text-xl mb-8">
+              We only focus on certain areas, giving you the results that really
+              matter. We won't offer you something we don't excel in.
             </h3>
-            {[
-              {
-                title: "Lorem ipsum dolor sit amet consectetur adipisicing",
-                content:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
-              },
-            ].map((el, index) => (
-              <div key={index}>
-                <h4>{el.title}</h4>
-                <p>{el.content}</p>
-              </div>
-            ))}
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+              {[
+                {
+                  title: "Laravel",
+                  content:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
+                },
+                {
+                  title: "React/NextJS",
+                  content:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
+                },
+                {
+                  title: "Wix/Wordpress",
+                  content:
+                    "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
+                },
+              ].map((el, index) => (
+                <div key={index}>
+                  <h4 className="text-2xl underline decoration-red-500 transform -rotate-2 mb-4 underline-offset-8 font-bold">
+                    {el.title}
+                  </h4>
+                  <p className="text-md text-black/50">{el.content}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        <section id="how-we-work" className="bg-grid py-20">
+        <section id="how-we-work" className="bg-primary text-white py-20">
           <div className="container">
-            <div className="flex flex-col gap-32">
+            <h2 className="text-4xl heading-text mb-8 !decoration-black">How we approach work</h2>
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
               {[
                 {
-                  title: "Ideation",
+                  title: "1) Ideation",
                   content:
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
                 {
-                  title: "Deisnging and Prototyping",
+                  title: "2) Planning",
                   content:
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
                 {
-                  title: "Delivery",
+                  title: "3) Prototyping",
+                  content:
+                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                },
+                {
+                  title: "4) Delivery",
                   content:
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
               ].map((el, index) => (
-                <div
-                  className="grid grid-cols-1 items-center gap-8 md:grid-cols-2"
-                  key={index}
-                >
-                  <div className={index % 2 != 0 ? "order-last" : ""}>
-                    <h2 className="text-3xl underline decoration-red-500 transform -rotate-2 mb-4 underline-offset-8 font-bold lg:text-5xl">
-                      {el.title}
-                    </h2>
-                    <p className="text-xl text-black/50">{el.content}</p>
-                  </div>
-                  <div>
-                    <img src={Flynterest} className="w-auto h-60 mx-auto" />
-                  </div>
+                <div key={index}>
+                  <h4 className="text-2xl underline decoration-black transform -rotate-2 mb-4 underline-offset-8 font-bold">
+                    {el.title}
+                  </h4>
+                  <p className="text-md text-white/70 mt-8">{el.content}</p>
                 </div>
               ))}
             </div>
