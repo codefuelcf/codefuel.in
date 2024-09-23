@@ -67,56 +67,62 @@ export default function ({ children }) {
             <h4 className="text-6xl capitalize font-bold mb-4">
               let's make something. together.
             </h4>
+            <div className="text-sm">
+              <p className="">
+                Codefuel Software and Solutions Private Limited
+              </p>
+              <p className="">CIN: U72900JK2021OPC012765</p>
+              <p className="">GST: 01AAJCC8036E1Z1</p>
+            </div>
           </div>
           <div className="text-right">
             <ul className="text-3xl font-bold list-none capitalize">
-              <li>
-                <a href="{{ route('front.about') }}">About</a>
-              </li>
-              <li>
-                <a href="{{ route('front.privacy-policy') }}">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="{{ route('front.terms-and-conditions') }}">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="{{ route('front.returns-and-refunds') }}">
-                  Return & Refunds
-                </a>
-              </li>
+              {[
+                {
+                  title: "Pricing",
+                  link: "/",
+                },
+                {
+                  title: "Contact",
+                  link: "/",
+                },
+                {
+                  title: "Privacy Policy",
+                  link: "/",
+                },
+                {
+                  title: "Return & Refunds",
+                  link: "/",
+                },
+                {
+                  title: "Terms & Conditions",
+                  link: "/",
+                },
+              ].map((el, index) => (
+                <li key={index}>
+                  <a href={el.link}>{el.title}</a>
+                </li>
+              ))}
             </ul>
+
             <ul className="text-lg font-bold flex justify-end gap-4 mt-8 list-none capitalize">
-              <li>
-                <a href="https://github.com/codefuelcf" target="__blank">
-                  Github
-                </a>
-              </li>
-              <li>
-                <a href="https://facebook.com/codefuelcf" target="__blank">
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com/codefuelcf" target="__blank">
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/codefuelcf" target="__blank">
-                  Twitter
-                </a>
-              </li>
+              {[
+                {
+                  platform: "X",
+                  link: "https://x.com/codefuelcf",
+                },
+                {
+                  platform: "Github",
+                  link: "https://github.com/codefuelcf",
+                },
+              ].map((el, index) => (
+                <li key={index}>
+                  <a href={el.link} target="__blank">
+                    {el.platform}
+                  </a>
+                </li>
+              ))}
             </ul>
-          </div>
-          <div className="text-sm font-bold">
-            <p>hello@codefuel.in</p>
-          </div>
-          <div className="text-sm font-bold flex flex-col gap-1 text-right">
-            <p className="">Codefuel Software and Solutions Private Limited</p>
-            <p className="">CIN: U72900JK2021OPC012765</p>
-            <p className="">GST: 01AAJCC8036E1Z1</p>
           </div>
         </div>
       </footer>
