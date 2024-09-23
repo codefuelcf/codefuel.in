@@ -33,4 +33,11 @@ Route::post('/contact', SubmitContactForm::class)
 Route::post('/newsletter', SubscribeToNewsletter::class)
     ->name('newsletter.store');
 
-Route::inertia('/test', 'Home');
+Route::prefix('/new')->group(function () {
+    Route::inertia('/home', 'Home');
+    Route::inertia('/pricing', 'Home');
+    Route::inertia('/contact', 'Home');
+    Route::inertia('/privacy-policy', 'Home');
+    Route::inertia('/return-and-refund', 'Home');
+    Route::inertia('/terms-and-conditions', 'Home');
+});
