@@ -17,10 +17,10 @@ export default function ({ children }) {
 
       {children}
 
-      <footer className="bg-primary py-20 px-6 text-white | md:px-32">
+      <footer className="bg-primary py-20 px-6 text-white">
         <div className="container grid grid-cols-1 gap-8 | lg:grid-cols-2">
-          <div>
-            <h4 className="text-4xl capitalize font-bold mb-4 lg:text-6xl">
+          <div className="order-last lg:order-first">
+            <h4 className="text-5xl capitalize font-bold mb-4 lg:text-6xl">
               let's make something. together.
             </h4>
             <div className="text-sm">
@@ -31,8 +31,8 @@ export default function ({ children }) {
               <p className="">GST: 01AAJCC8036E1Z1</p>
             </div>
           </div>
-          <div className="text-right">
-            <ul className="text-3xl font-bold list-none capitalize">
+          <div className="text-center lg:text-right">
+            <ul className="text-xl font-bold list-none capitalize lg:text-3xl">
               {[
                 {
                   title: "Pricing",
@@ -61,7 +61,7 @@ export default function ({ children }) {
               ))}
             </ul>
 
-            <ul className="text-lg font-bold flex justify-end gap-4 mt-8 list-none capitalize">
+            <ul className="text-lg font-bold flex justify-center gap-4 mt-8 list-none capitalize lg:justify-end">
               {[
                 {
                   platform: "X",
