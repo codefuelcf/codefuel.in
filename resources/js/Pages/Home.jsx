@@ -112,6 +112,28 @@ export default function () {
           </div>
         </section>
 
+        <section id="good-at-few-things" className="bg-white py-20">
+          <div className="container">
+            <h2>We are good at a few things</h2>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              officiis.
+            </h3>
+            {[
+              {
+                title: "Lorem ipsum dolor sit amet consectetur adipisicing",
+                content:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
+              },
+            ].map((el, index) => (
+              <div key={index}>
+                <h4>{el.title}</h4>
+                <p>{el.content}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <section id="how-we-work" className="bg-grid py-20">
           <div className="container">
             <div className="flex flex-col gap-32">
