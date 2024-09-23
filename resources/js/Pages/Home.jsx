@@ -86,7 +86,7 @@ export default function () {
               {[
                 {
                   testimonial:
-                    "Working with Codefuel was a game-changer. Their technical solutions have streamlined our operations and boosted productivity.",
+                    "Working with Codefuel was great. Technical solutions provided by them have streamlined our operations and boosted productivity.",
                   name: "Ehsan Qudussi",
                   designation: "CTO",
                   brand: "Delhi Public School, Srinagar",
