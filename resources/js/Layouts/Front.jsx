@@ -5,7 +5,7 @@ export default function ({ children }) {
   return (
     <>
       <header className="sticky top-0 z-40 border-b bg-white">
-        <div className="h-20 flex justify-between items-center container mx-auto">
+        <div className="h-20 flex justify-between items-center container">
           <div id="navbar-logo">
             <a href="/">
               <Logo className="h-12 text-primary" />
