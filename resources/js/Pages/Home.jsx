@@ -165,7 +165,7 @@ export default function () {
             </h2>
             <h3 className="text-xl mb-8">
               How we approach work We only focus on certain areas, giving you
-              the results that really matter. We won't 
+              the results that really matter. We won't
             </h3>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
               {[
@@ -198,6 +198,14 @@ export default function () {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="start-a-project" className="py-20">
+          <div className="container">
+            <h2 className="text-4xl heading-text mb-8">
+              Want to start a project?
+            </h2>
           </div>
         </section>
       </main>

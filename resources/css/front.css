@@ -9,10 +9,6 @@
     @apply text-primary hover:underline;
   }
 
-  footer a {
-    @apply text-white hover:no-underline;
-  }
-
   .container {
     @apply !max-w-screen-xl mx-auto px-6 md:px-24;
   }

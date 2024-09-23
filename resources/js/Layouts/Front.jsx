@@ -37,7 +37,10 @@ export default function ({ children }) {
           </div>
           <div
             id="navbar"
-            className={'inset-0 absolute top-20 w-full bg-white z-50 | lg:inset-auto lg:top-auto lg:block lg:static lg:m-0 lg:w-auto ' + (!mobileNavigationOpen ? 'hidden' : '')}
+            className={
+              "inset-0 absolute top-20 w-full bg-white z-50 | lg:inset-auto lg:top-auto lg:block lg:static lg:m-0 lg:w-auto " +
+              (!mobileNavigationOpen ? "hidden" : "")
+            }
           >
             <nav className=" bg-white py-4 px-6 | md:px-32 | lg:px-0 lg:py-0">
               <ul className="menu list-none text-sm sm:mt-0">
@@ -59,7 +62,7 @@ export default function ({ children }) {
       {children}
 
       <footer className="bg-gray-800 py-10 px-6 text-white | md:px-32">
-        <div className="container mx-auto grid grid-cols-1 gap-4 | md:grid-cols-4 md:gap-8">
+        <div className="container grid grid-cols-1 gap-4 | md:grid-cols-4 md:gap-8">
           <div>
             <h4 className="text-xl capitalize font-bold mb-4">
               Want to reach us?
