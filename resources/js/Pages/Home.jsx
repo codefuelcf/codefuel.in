@@ -13,7 +13,7 @@ export default function () {
         <section id="masthead" className="bg-grid py-20">
           <div className="container flex flex-col gap-12">
             <div id="masthead-title">
-              <h1 className="text-center text-9xl font-bold -rotate-1">
+              <h1 className="text-center text-6xl font-bold -rotate-1 lg:text-9xl">
                 Turn your{" "}
                 <span className="underline decoration-primary">ideas</span> in
                 to a{" "}
@@ -25,7 +25,7 @@ export default function () {
               </h2>
             </div>
 
-            <div id="masthead-ratings" className="flex gap-12 justify-center">
+            <div id="masthead-ratings" className="flex gap-10 justify-center">
               {[
                 { number: 20, title: "Happy Customers" },
                 { number: 5, title: "Years of Experience" },

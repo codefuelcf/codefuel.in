@@ -20,7 +20,7 @@ export default function ({ children }) {
       <footer className="bg-primary py-20 px-6 text-white | md:px-32">
         <div className="container grid grid-cols-1 gap-8 | lg:grid-cols-2">
           <div>
-            <h4 className="text-6xl capitalize font-bold mb-4">
+            <h4 className="text-4xl capitalize font-bold mb-4 lg:text-6xl">
               let's make something. together.
             </h4>
             <div className="text-sm">
