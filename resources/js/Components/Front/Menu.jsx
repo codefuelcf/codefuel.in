@@ -1,11 +1,16 @@
 import { useState } from "react";
 import Logo from "../Logo";
+import { Menu, SquareMenu, SquareX, X, XCircle } from "lucide-react";
 
 export default function () {
   const [isOpen, toggleMenu] = useState(false);
   return (
     <>
-      <button onClick={() => toggleMenu(!isOpen)}>Menu</button>
+      <button
+        onClick={() => toggleMenu(!isOpen)}
+      >
+        <Menu className="size-5" />
+      </button>
 
       <div
         className={
@@ -20,7 +25,11 @@ export default function () {
                 <Logo className="h-12 text-white" />
               </a>
             </div>
-            <button onClick={() => toggleMenu(!isOpen)}>Menu</button>
+            <button
+              onClick={() => toggleMenu(!isOpen)}
+            >
+              <XCircle strokeWidth={3} className="size-5" />
+            </button>
           </div>
 
           <div className="pt-20">
