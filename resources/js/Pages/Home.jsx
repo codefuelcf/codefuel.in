@@ -185,7 +185,7 @@ export default function () {
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
                 {
-                  title: "4) Deployment",
+                  title: "4) Maintainence",
                   content:
                     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
                 },
