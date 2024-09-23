@@ -82,7 +82,7 @@ export default function () {
             <h4 className="text-4xl heading-text mb-8 !decoration-black text-white">
               Our Happy Clients Say About Us
             </h4>
-            <div className="grid grid-cols-1 gap-4 text-sm md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 text-sm lg:grid-cols-3">
               {[
                 {
                   testimonial:
@@ -160,7 +160,13 @@ export default function () {
 
         <section id="how-we-work" className="bg-primary text-white py-20">
           <div className="container">
-            <h2 className="text-4xl heading-text mb-8 !decoration-black">How we approach work</h2>
+            <h2 className="text-4xl heading-text mb-8 !decoration-black">
+              How we approach work
+            </h2>
+            <h3 className="text-xl mb-8">
+              We only focus on certain areas, giving you the results that really
+              matter. We won't offer you something we don't excel in.
+            </h3>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
               {[
                 {
@@ -188,7 +194,7 @@ export default function () {
                   <h4 className="text-2xl underline decoration-black transform -rotate-2 mb-4 underline-offset-8 font-bold">
                     {el.title}
                   </h4>
-                  <p className="text-md text-white/70 mt-8">{el.content}</p>
+                  <p className="text-md text-white/80 mt-8">{el.content}</p>
                 </div>
               ))}
             </div>
