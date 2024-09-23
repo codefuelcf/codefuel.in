@@ -61,24 +61,33 @@ export default function ({ children }) {
 
       {children}
 
-      <footer className="bg-gray-800 py-10 px-6 text-white | md:px-32">
-        <div className="container grid grid-cols-1 gap-4 | md:grid-cols-4 md:gap-8">
+      <footer className="bg-primary py-20 px-6 text-white | md:px-32">
+        <div className="container grid grid-cols-1 gap-8 | lg:grid-cols-2">
           <div>
-            <h4 className="text-xl capitalize font-bold mb-4">
-              Want to reach us?
+            <h4 className="text-6xl capitalize font-bold mb-4">
+              let's make something. together.
             </h4>
-            <p>
-              Want to start a project? Want to get a quote? <br />
-              You may also reach out to us at{" "}
-              <b>
-                <a href="mailto:hello@codefuel.in">hello@codefuel.in</a>
-              </b>{" "}
-              <br />
-            </p>
           </div>
-          <div>
-            <h4 className="text-xl capitalize font-bold mb-4">Follow us</h4>
-            <ul className="list none capitalize">
+          <div className="text-right">
+            <ul className="text-3xl font-bold list-none capitalize">
+              <li>
+                <a href="{{ route('front.about') }}">About</a>
+              </li>
+              <li>
+                <a href="{{ route('front.privacy-policy') }}">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="{{ route('front.terms-and-conditions') }}">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a href="{{ route('front.returns-and-refunds') }}">
+                  Return & Refunds
+                </a>
+              </li>
+            </ul>
+            <ul className="text-lg font-bold flex justify-end gap-4 mt-8 list-none capitalize">
               <li>
                 <a href="https://github.com/codefuelcf" target="__blank">
                   Github
@@ -101,57 +110,14 @@ export default function ({ children }) {
               </li>
             </ul>
           </div>
-          <div>
-            <h4 className="text-xl capitalize font-bold mb-4">Company</h4>
-            <ul className="list none capitalize">
-              <li>
-                <a href="{{ route('front.about') }}">About</a>
-              </li>
-              <li>
-                <a href="{{ route('front.privacy-policy') }}">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="{{ route('front.terms-and-conditions') }}">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="{{ route('front.returns-and-refunds') }}">
-                  Return & Refunds
-                </a>
-              </li>
-            </ul>
+          <div className="text-sm font-bold">
+            <p>hello@codefuel.in</p>
           </div>
-          <div>
-            <h4 className="text-xl capitalize font-bold mb-4">Newsletter</h4>
-            <p>
-              Register for our newsletter and receive all the latest updates
-              from us
-            </p>
-            <div className="mt-4">
-              <form action="{{ route('newsletter.store') }}" method="post">
-                <input
-                  type="email"
-                  className="block w-full text-gray-900 rounded-md"
-                  name="email"
-                  placeholder="youremail@example.com"
-                />
-                <button
-                  type="submit"
-                  className="text-white w-full block hover:underline mt-1"
-                >
-                  Register For Newsletter
-                </button>
-              </form>
-            </div>
+          <div className="text-sm font-bold flex flex-col gap-1 text-right">
+            <p className="">Codefuel Software and Solutions Private Limited</p>
+            <p className="">CIN: U72900JK2021OPC012765</p>
+            <p className="">GST: 01AAJCC8036E1Z1</p>
           </div>
-        </div>
-        <div className="mt-8 text-center">
-          <p className="inline">
-            &copy; 2016 -{" "}
-            <span x-data="{}" x-text="new Date().getFullYear()"></span>. All
-            Rights Reserved. <b>Codefuel</b>
-          </p>
         </div>
       </footer>
     </>
