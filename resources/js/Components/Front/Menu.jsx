@@ -9,7 +9,7 @@ export default function () {
 
       <div
         className={
-          "fixed inset-0 w-screen h-screen bg-primary text-white z-50 transition-opacity delay-50 duration-1000 " +
+          "fixed inset-0 w-screen h-screen bg-primary text-white z-50 transition-opacity delay-50 duration-700 " +
           (isOpen ? "opacity-100 visible" : "opacity-0 invisible")
         }
       >
