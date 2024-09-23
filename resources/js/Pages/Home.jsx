@@ -1,5 +1,11 @@
 import Front from "../Layouts/Front";
 
+import Vivo from "../../img/brands/vivo.png";
+import Flynterest from "../../img/brands/flynterest.png";
+import RoyalEnfield from "../../img/brands/royal-enfield.png";
+import SheenGraphics from "../../img/brands/sheen-graphics.png";
+import DelhiPublicSchool from "../../img/brands/delhi-public-school.png";
+
 export default function () {
   return (
     <Front>
@@ -53,7 +59,20 @@ export default function () {
         <section
           id="clients"
           className="bg-gradient-to-b from-gray-50 to-white border-t-2 border-gray-100 px-6 py-20 bg-white text-center | md:px-32"
-        ></section>
+        >
+          <div className="grid grid-cols-2 gap-8 items-center md:grid-cols-6">
+            {[
+              Vivo,
+              Flynterest,
+              DelhiPublicSchool,
+              RoyalEnfield,
+              SheenGraphics,
+              DelhiPublicSchool,
+            ].map((el, index) => (
+              <img key={index} src={el} alt="Flynterest" className="size-32 grayscale hover:grayscale-0" />
+            ))}
+          </div>
+        </section>
       </main>
     </Front>
   );
