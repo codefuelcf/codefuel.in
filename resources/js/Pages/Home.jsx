@@ -20,8 +20,7 @@ export default function () {
                 <span className="underline decoration-primary">reality</span>
               </h1>
               <h2 className="text-center mt-4 text-black/75 text-lg">
-                Codefuel helps you build websites, apps, MVP's and much more
-                cost efficiently and great quality
+                We build quality websites, apps, MVP's, designs, wireframes and more at efficient cost
               </h2>
             </div>
 
