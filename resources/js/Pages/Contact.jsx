@@ -1,15 +1,10 @@
+import PageTitle from "../Components/Front/PageTitle";
 import Front from "../Layouts/Front";
 
 export default function () {
   return (
     <Front>
-      <section id="page-title" className="bg-primary text-white py-10">
-        <div className="container">
-          <h1 className="text-4xl font-bold -rotate-1 underline decoration-black decoration-4 underline-offset-4 lg:text-6xl">
-            Contact
-          </h1>
-        </div>
-      </section>
+      <PageTitle title="Contact" />
 
       <main>
         <section id="contact" className="bg-grid py-20">
