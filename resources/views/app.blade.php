@@ -7,7 +7,7 @@
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-  <title inertia>{{ config('app.name', 'Codefuel') }}</title>
+  <title inertia>Codefuel</title>
 
   <!-- Fonts -->
   <!-- @googlefonts -->

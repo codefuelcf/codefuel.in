@@ -1,4 +1,5 @@
 import Front from "../Layouts/Front";
+import { Head } from "@inertiajs/react";
 
 import Vivo from "../../img/brands/vivo.png";
 import Flynterest from "../../img/brands/flynterest.png";
@@ -9,6 +10,7 @@ import DelhiPublicSchool from "../../img/brands/delhi-public-school.png";
 export default function () {
   return (
     <Front>
+      <Head title="Home" />
       <main>
         <section id="masthead" className="bg-grid py-20">
           <div className="container flex flex-col gap-12">
