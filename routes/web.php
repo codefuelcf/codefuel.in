@@ -38,6 +38,6 @@ Route::prefix('/new')->group(function () {
     Route::inertia('/pricing', 'Home');
     Route::inertia('/contact', 'Contact');
     Route::inertia('/privacy-policy', 'PrivacyPolicy');
-    Route::inertia('/return-and-refund', 'Home');
-    Route::inertia('/terms-and-conditions', 'Home');
+    Route::inertia('/returns-and-refunds', 'Home');
+    Route::inertia('/terms-and-conditions', 'TermsAndConditions');
 });
