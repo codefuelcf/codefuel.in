@@ -2,15 +2,15 @@ import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./resources/**/*.blade.php", "./resources/**/*.js"],
+  content: ["./resources/**/*.blade.php", "./resources/**/*.js", "./resources/**/*.jsx", "./resources/**/*.css"],
   theme: {
     extend: {
       colors: {
         primary: "#ff3030",
       },
       fontFamily: {
-        'sans': ['Figtree', 'Roboto', 'Tahoma', 'sans-serif'],
-        'serif': ['Instruement Serif', 'Times New Roman', 'Times', 'serif'],
+        'sans': ['Outfit', 'Roboto', 'Tahoma', 'sans-serif'],
+        'serif': ['Instrument Serif', 'Times New Roman', 'Times', 'serif'],
       }
     },
   },
