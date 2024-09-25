@@ -2,7 +2,6 @@ import Front from "../Layouts/Front";
 import { Head } from "@inertiajs/react";
 
 import Vivo from "../../img/brands/vivo.png";
-import Flynterest from "../../img/brands/flynterest.png";
 import RoyalEnfield from "../../img/brands/royal-enfield.png";
 import SheenGraphics from "../../img/brands/sheen-graphics.png";
 import DelhiPublicSchool from "../../img/brands/delhi-public-school.png";

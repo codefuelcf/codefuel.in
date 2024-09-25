@@ -4,7 +4,9 @@ import Front from "../Layouts/Front";
 export default function () {
   return (
     <Front>
+      <Head title="Terms & Conditions" />
       <PageTitle title="Terms & Conditions" />
+
       <div class="container py-20 text-justify">
         <ol class="list-decimal list-inside flex flex-col gap-8">
           <li>

@@ -4,6 +4,7 @@ import Front from "../Layouts/Front";
 export default function () {
   return (
     <Front>
+      <Head title="Returns & Refunds" />
       <PageTitle title="Returns & Refunds" />
 
       <main>

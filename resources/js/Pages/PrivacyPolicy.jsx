@@ -4,6 +4,7 @@ import PageTitle from "../Components/Front/PageTitle";
 export default function () {
   return (
     <Front>
+      <Head title="Privacy Policy" />
       <PageTitle title="Privacy Policy" />
 
       <main>
