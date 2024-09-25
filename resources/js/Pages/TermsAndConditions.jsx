@@ -1,5 +1,6 @@
-import PageTitle from "../Components/Front/PageTitle";
 import Front from "../Layouts/Front";
+import { Head } from "@inertiajs/react";
+import PageTitle from "../Components/Front/PageTitle";
 
 export default function () {
   return (
