@@ -1,43 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{
-    SubmitContactForm,
-    SubscribeToNewsletter
-};
+use App\Http\Controllers\SubmitContactForm;
 
-Route::view('/', 'front.home')
+Route::inertia('/', 'Home')
     ->name('front.home');
 
-Route::view('/about', 'front.about')
-    ->name('front.about');
+Route::inertia('/pricing', 'Home')
+    ->name('front.pricing'); // Todo
 
-Route::view('/services', 'front.services')
-    ->name('front.services');
+Route::inertia('/contact', 'Contact')
+    ->name('front.contact');
 
-Route::view('/privacy-policy', 'front.privacy-policy')
+Route::inertia('/privacy-policy', 'PrivacyPolicy')
     ->name('front.privacy-policy');
 
-Route::view('/terms-conditions', 'front.terms-and-conditions')
-    ->name('front.terms-and-conditions');
-
-Route::view('/returns-and-refunds', 'front.returns-and-refunds')
+Route::inertia('/returns-and-refunds', 'ReturnsAndRefunds')
     ->name('front.returns-and-refunds');
 
-Route::view('/contact', 'front.contact')
-    ->name('front.contact');
+Route::inertia('/terms-and-conditions', 'TermsAndConditions')
+    ->name('front.terms-and-conditions');
 
 Route::post('/contact', SubmitContactForm::class)
     ->name('front.contact.store');
-
-Route::post('/newsletter', SubscribeToNewsletter::class)
-    ->name('newsletter.store');
-
-Route::prefix('/new')->group(function () {
-    Route::inertia('/home', 'Home');
-    Route::inertia('/pricing', 'Home');
-    Route::inertia('/contact', 'Contact');
-    Route::inertia('/privacy-policy', 'PrivacyPolicy');
-    Route::inertia('/returns-and-refunds', 'ReturnsAndRefunds');
-    Route::inertia('/terms-and-conditions', 'TermsAndConditions');
-});
