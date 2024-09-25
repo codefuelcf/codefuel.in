@@ -1,6 +1,7 @@
-import { useState } from "react";
 import Logo from "../Logo";
-import { Menu, SquareMenu, SquareX, X, XCircle } from "lucide-react";
+import { useState } from "react";
+import { Link } from "@inertiajs/react";
+import { Menu, XCircle } from "lucide-react";
 
 export default function () {
   const [isOpen, toggleMenu] = useState(false);
@@ -53,9 +54,9 @@ export default function () {
                 },
               ].map((el, index) => (
                 <li key={index}>
-                  <a className="text-white" href={el.link}>
+                  <Link className="text-white" href={el.link}>
                     {el.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
