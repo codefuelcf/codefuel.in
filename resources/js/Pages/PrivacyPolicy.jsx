@@ -1,5 +1,5 @@
-import PageTitle from "../Components/Front/PageTitle";
 import Front from "../Layouts/Front";
+import PageTitle from "../Components/Front/PageTitle";
 
 export default function () {
   return (

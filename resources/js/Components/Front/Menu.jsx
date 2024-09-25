@@ -33,12 +33,12 @@ export default function () {
             <ul className="text-4xl font-bold list-none capitalize flex flex-col gap-4 lg:text-6xl">
               {[
                 {
-                  title: "Pricing",
-                  link: route("front.pricing"),
-                },
-                {
                   title: "Contact",
                   link: route("front.contact"),
+                },
+                {
+                  title: "Services",
+                  link: route("front.services"),
                 },
                 {
                   title: "Privacy Policy",

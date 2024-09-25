@@ -6,8 +6,8 @@ use App\Http\Controllers\SubmitContactForm;
 Route::inertia('/', 'Home')
     ->name('front.home');
 
-Route::inertia('/pricing', 'Home')
-    ->name('front.pricing'); // Todo
+Route::inertia('/services', 'Services')
+    ->name('front.services');
 
 Route::inertia('/contact', 'Contact')
     ->name('front.contact');

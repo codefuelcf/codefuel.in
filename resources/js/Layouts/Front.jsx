@@ -1,4 +1,5 @@
 import Logo from "../Components/Logo";
+import { Link } from "@inertiajs/react";
 import Menu from "../Components/Front/Menu";
 
 export default function ({ children }) {
@@ -7,9 +8,9 @@ export default function ({ children }) {
       <header className="sticky top-0 z-40 border-b bg-white">
         <div className="h-20 flex justify-between items-center container">
           <div id="navbar-logo">
-            <a href="/">
+            <Link href={route("front.home")}>
               <Logo className="h-12 text-primary" />
-            </a>
+            </Link>
           </div>
           <Menu />
         </div>
@@ -35,28 +36,28 @@ export default function ({ children }) {
             <ul className="text-xl font-bold list-none capitalize lg:text-3xl">
               {[
                 {
-                  title: "Pricing",
-                  link: "/",
+                  title: "Contact",
+                  link: route("front.contact"),
                 },
                 {
-                  title: "Contact",
-                  link: "/",
+                  title: "Services",
+                  link: route("front.services"),
                 },
                 {
                   title: "Privacy Policy",
-                  link: "/",
+                  link: route("front.privacy-policy"),
                 },
                 {
                   title: "Return & Refunds",
-                  link: "/",
+                  link: route("front.returns-and-refunds"),
                 },
                 {
                   title: "Terms & Conditions",
-                  link: "/",
+                  link: route("front.terms-and-conditions"),
                 },
               ].map((el, index) => (
                 <li key={index}>
-                  <a href={el.link}>{el.title}</a>
+                  <Link className="text-white" href={el.link}>{el.title}</Link>
                 </li>
               ))}
             </ul>
@@ -73,7 +74,7 @@ export default function ({ children }) {
                 },
               ].map((el, index) => (
                 <li key={index}>
-                  <a href={el.link} target="__blank">
+                  <a className="text-white" href={el.link} target="__blank">
                     {el.platform}
                   </a>
                 </li>
