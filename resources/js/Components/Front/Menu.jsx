@@ -6,9 +6,7 @@ export default function () {
   const [isOpen, toggleMenu] = useState(false);
   return (
     <>
-      <button
-        onClick={() => toggleMenu(!isOpen)}
-      >
+      <button onClick={() => toggleMenu(!isOpen)}>
         <Menu className="size-5" />
       </button>
 
@@ -25,9 +23,7 @@ export default function () {
                 <Logo className="h-12 text-white" />
               </a>
             </div>
-            <button
-              onClick={() => toggleMenu(!isOpen)}
-            >
+            <button onClick={() => toggleMenu(!isOpen)}>
               <XCircle strokeWidth={3} className="size-5" />
             </button>
           </div>
@@ -37,23 +33,23 @@ export default function () {
               {[
                 {
                   title: "Pricing",
-                  link: "/",
+                  link: route("front.pricing"),
                 },
                 {
                   title: "Contact",
-                  link: "/",
+                  link: route("front.contact"),
                 },
                 {
                   title: "Privacy Policy",
-                  link: "/",
+                  link: route("front.privacy-policy"),
                 },
                 {
                   title: "Return & Refunds",
-                  link: "/",
+                  link: route("front.returns-and-refunds"),
                 },
                 {
                   title: "Terms & Conditions",
-                  link: "/",
+                  link: route("front.terms-and-conditions"),
                 },
               ].map((el, index) => (
                 <li key={index}>

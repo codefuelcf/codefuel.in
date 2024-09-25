@@ -13,7 +13,7 @@
   <!-- @googlefonts -->
 
   <!-- Routes -->
-  <!-- @routes -->
+  @routes
 
   <!-- Scripts -->
   @viteReactRefresh
