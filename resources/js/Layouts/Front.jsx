@@ -40,10 +40,6 @@ export default function ({ children }) {
                   link: route("front.contact"),
                 },
                 {
-                  title: "Services",
-                  link: route("front.services"),
-                },
-                {
                   title: "Privacy Policy",
                   link: route("front.privacy-policy"),
                 },

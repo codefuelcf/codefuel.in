@@ -162,7 +162,7 @@ export default function () {
         <section id="how-we-work" className="bg-primary text-white py-20">
           <div className="container">
             <h2 className="text-4xl heading-text mb-8 !decoration-black">
-              Why you might like to partner with us
+              Steps we follow to complete your project
             </h2>
             <h3 className="text-xl mb-8">
               How we approach work We only focus on certain areas, giving you
