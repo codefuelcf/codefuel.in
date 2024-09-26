@@ -21,7 +21,8 @@ export default function () {
                 <span className="underline decoration-primary">reality</span>
               </h1>
               <h2 className="text-center mt-4 text-black/75 text-lg">
-                We build quality websites, apps, MVP's, designs, wireframes and more at efficient cost
+                We build quality websites, apps, MVP's, designs, wireframes and
+                more at efficient cost
               </h2>
             </div>
 
@@ -130,21 +131,26 @@ export default function () {
               matter. We won't offer you something we don't excel in.
             </h3>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+              {/* 
+              - Be secific to it and not mention anything else
+              - Don;t praise, people should know
+              For what / Why / Experience / 
+              */}
               {[
                 {
                   title: "Laravel",
                   content:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
+                    "Laravel is our framework of choice for everything that requires a backend. We love working with Laravel, Inertia, React, and Tailwind to create great web applications.",
                 },
                 {
-                  title: "React/NextJS",
+                  title: "React/Next",
                   content:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
+                    "React is our preferred frontend framework, and with Next on top of it, we build stunning websites with accessible, responsive, interactive, and user-friendly UIs.",
                 },
                 {
-                  title: "Wix/Wordpress",
+                  title: "Wordpress/Wix",
                   content:
-                    "Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing.",
+                    "WordPress and Wix are our go-to CMSes and underdog website builders. With their vast ecosystems, we get amazing websites up and running in just a few hours.",
                 },
               ].map((el, index) => (
                 <div key={index}>
