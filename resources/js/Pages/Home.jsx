@@ -182,7 +182,7 @@ export default function () {
                 {
                   title: "2) Prototyping",
                   content:
-                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                    "From ideation to prototyping, we give solid shape to your ideas, allowing you to interact with them and gather initial feedback. Prototyping can range from wireframes to MVPs.",
                 },
                 {
                   title: "3) Implementation",
