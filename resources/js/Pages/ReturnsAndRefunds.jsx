@@ -9,13 +9,13 @@ export default function () {
       <PageTitle title="Returns & Refunds" />
 
       <main>
-        <section id="returns-and-refunds" class="px-6 py-20 | md:px-32">
-          <div class="container text-justify">
-            <h3 class="text-2xl font-bold">Services</h3>
-            <ol class="list-decimal list-inside">
+        <section id="returns-and-refunds" className="px-6 py-20 | md:px-32">
+          <div className="container text-justify">
+            <h3 className="text-2xl font-bold">Services</h3>
+            <ol className="list-decimal list-inside">
               <li>
                 <strong>Service-Based Solutions</strong>
-                <ul class="list-disc list-inside">
+                <ul className="list-disc list-inside">
                   <li>
                     <strong>Non-Refundable Services:</strong> Due to the nature
                     of the work involved, once services have been delivered or
@@ -46,8 +46,8 @@ export default function () {
               </li>
             </ol>
 
-            <h3 class="text-2xl font-bold mt-8">Digital Products</h3>
-            <ol class="list-decimal list-inside">
+            <h3 className="text-2xl font-bold mt-8">Digital Products</h3>
+            <ol className="list-decimal list-inside">
               <li>
                 <strong>Non-Tangible Digital Products</strong>
                 <p>
@@ -56,7 +56,7 @@ export default function () {
                   the product has been downloaded or accessed, except in the
                   following circumstances:
                 </p>
-                <ul class="list-disc list-inside">
+                <ul className="list-disc list-inside">
                   <li>
                     <strong>Defective Products:</strong> If a digital product is
                     proven to be defective or not functioning as intended, we
@@ -85,12 +85,12 @@ export default function () {
               </li>
             </ol>
 
-            <h3 class="text-2xl font-bold mt-8">Exclusions</h3>
+            <h3 className="text-2xl font-bold mt-8">Exclusions</h3>
             <p>
               Refunds and returns will not be offered under the following
               circumstances:
             </p>
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>
                 <strong>
                   Failure to provide required information or assets:
@@ -111,13 +111,13 @@ export default function () {
               </li>
             </ul>
 
-            <h3 class="text-2xl font-bold mt-8">
+            <h3 className="text-2xl font-bold mt-8">
               How to Request a Refund or Return
             </h3>
             <p>
               To request a refund or report an issue with a product or service:
             </p>
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>
                 Email us at{" "}
                 <a href="mailto:info@codefuel.in">info@codefuel.in</a> with your

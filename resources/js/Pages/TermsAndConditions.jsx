@@ -8,8 +8,8 @@ export default function () {
       <Head title="Terms & Conditions" />
       <PageTitle title="Terms & Conditions" />
 
-      <div class="container py-20 text-justify">
-        <ol class="list-decimal list-inside flex flex-col gap-8">
+      <div className="container py-20 text-justify">
+        <ol className="list-decimal list-inside flex flex-col gap-8">
           <li>
             <strong>Job Order/Contract: </strong>The client's approval for work
             to commence shall be deemed a contractual agreement between the
@@ -22,7 +22,7 @@ export default function () {
             <strong>Three(3) Months Free Technical Support:</strong> Codefuel
             provides Three(3) months free technical support for following kind of
             issues:
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>Logical Bugs/Calculation related errors/bugs</li>
               <li>Server side scripting/programming errors/bugs</li>
               <li>Connection errors/API Integration Errors</li>
@@ -44,7 +44,7 @@ export default function () {
             <strong>Search Engine Submission/Optimization:</strong> Following
             services are not part of the project unless agreed otherwise in
             writing:
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>Submission of websites on different search engines.</li>
               <li>
                 Securing good ranking of your website on different search
@@ -58,7 +58,7 @@ export default function () {
             <strong>Site maintenance:</strong> Unless otherwise agreed in
             writing, following services will be separately billed after the
             website has been made live:
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>
                 Refinements and logical tweaks to the website, which were not
                 planned/approved by client earlier.
@@ -117,7 +117,7 @@ export default function () {
             Client and are payable to Codefuel before a formal application for
             registration is made. Examples of 3<sup>rd</sup> party fees are as
             under:
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>Domain Names</li>
               <li>Server Space Hosting Fees</li>
               <li>SSL Certificates</li>
@@ -155,7 +155,7 @@ export default function () {
 
           <li>
             <strong>Mode of Payment</strong>
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>
                 Clients Based Outside India: International Wire Transfers to
                 company account or card payments using Stripe or Razorpay.
@@ -169,7 +169,7 @@ export default function () {
 
           <li>
             <strong>Payment Terms:</strong>
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>
                 Payment plan is agreed between the ‘Client' and Codefuel based
                 on the milestones.
@@ -200,7 +200,7 @@ export default function () {
               Cancellation: Both the parties reserve the right to cancel the
               project at any stage.
             </strong>
-            <ul class="list-disc list-inside">
+            <ul className="list-disc list-inside">
               <li>
                 In case the project is cancelled by Client, the payments made
                 for the project can be refunded to the client after deducting
