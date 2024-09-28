@@ -167,11 +167,10 @@ export default function () {
         <section id="how-we-work" className="bg-primary text-white py-20">
           <div className="container">
             <h2 className="text-4xl heading-text mb-8 !decoration-black">
-              Steps we follow to complete your project
+              Steps we follow to complete your projects
             </h2>
             <h3 className="text-xl mb-8">
-              How we approach work We only focus on certain areas, giving you
-              the results that really matter. We won't
+              Our approach to work is simple and robust. Our process helps you get the best results
             </h3>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
               {[
