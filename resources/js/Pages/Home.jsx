@@ -50,7 +50,7 @@ export default function () {
                   <h3 className="font-bold text-4xl text-primary">
                     {el.number}+
                   </h3>
-                  <h3 className="leading-tight">{el.title}</h3>
+                  <h4 className="leading-tight">{el.title}</h4>
                 </div>
               ))}
             </div>
@@ -67,13 +67,13 @@ export default function () {
         </section>
 
         <section id="clients" className="py-20 bg-white container">
-          <h2 className="text-4xl heading-text mb-8">
+          <h3 className="text-4xl heading-text mb-8">
             Trusted By All Sizes Since 2018
-          </h2>
-          <h3 className="text-xl mb-8">
+          </h3>
+          <h4 className="text-xl mb-8">
             We've had the privilege of working with a diverse range of clients,
             from ambitious startups to top global brands.
-          </h3>
+          </h4>
 
           <div className="grid grid-cols-2 gap-8 items-center md:grid-cols-4">
             {[Vivo, RoyalEnfield, SheenGraphics, DelhiPublicSchool].map(
@@ -91,9 +91,9 @@ export default function () {
 
         <section id="testimonials" className="bg-primary py-20">
           <div className="container">
-            <h4 className="text-4xl heading-text mb-8 !decoration-black text-white">
+            <h3 className="text-4xl heading-text mb-8 !decoration-black text-white">
               Our Happy Clients Say About Us
-            </h4>
+            </h3>
             <div className="grid grid-cols-1 gap-4 text-sm lg:grid-cols-3">
               {[
                 {
@@ -134,13 +134,13 @@ export default function () {
 
         <section id="good-at-few-things" className="bg-grid py-20">
           <div className="container">
-            <h2 className="text-4xl heading-text mb-8">
+            <h3 className="text-4xl heading-text mb-8">
               We are good at a few things
-            </h2>
-            <h3 className="text-xl mb-8">
+            </h3>
+            <h4 className="text-xl mb-8">
               We only focus on certain areas, giving you the results that really
               matter. We won't offer you something we don't excel in.
-            </h3>
+            </h4>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
               {[
                 {
@@ -172,13 +172,13 @@ export default function () {
 
         <section id="how-we-work" className="bg-primary text-white py-20">
           <div className="container">
-            <h2 className="text-4xl heading-text mb-8 !decoration-black">
+            <h3 className="text-4xl heading-text mb-8 !decoration-black">
               Steps we take to deliver outstanding projects.
-            </h2>
-            <h3 className="text-xl mb-8">
+            </h3>
+            <h4 className="text-xl mb-8">
               Our approach to work is simple and robust. Our process helps you
               get the best results
-            </h3>
+            </h4>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
               {[
                 {
@@ -215,13 +215,13 @@ export default function () {
 
         <section id="start-a-project" className="py-20">
           <div className="container">
-            <h2 className="text-4xl heading-text mb-8">
+            <h3 className="text-4xl heading-text mb-8">
               Want to start a project?
-            </h2>
-            <h3 className="text-xl mb-8">
+            </h3>
+            <h4 className="text-xl mb-8">
               Let's collaborate on your next big project and create something
               great together.
-            </h3>
+            </h4>
 
             <div className="max-w-screen-md">
               <form onSubmit={submitStartAProjectForm}>

@@ -29,9 +29,9 @@ export default function ({ children, props }) {
       <footer className="bg-primary py-20 px-6 text-white">
         <div className="container grid grid-cols-1 gap-8 | lg:grid-cols-2">
           <div className="order-last lg:order-first">
-            <h4 className="text-5xl capitalize font-bold mb-4 lg:text-6xl">
+            <h3 className="text-5xl capitalize font-bold mb-4 lg:text-6xl">
               let's make something. together.
-            </h4>
+            </h3>
             <div className="text-sm">
               <p className="">
                 Codefuel Software and Solutions Private Limited
