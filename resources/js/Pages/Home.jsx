@@ -57,7 +57,7 @@ export default function () {
 
             <div id="masthead-cta" className="flex justify-center">
               <a
-                href="mailto:hello@codefuel.in?subject=May%20the%20Force%20be%20with%20you&body=May%20the%20Force%20be'%20with%20us%20all%3A%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Customer"
+                href="mailto:hello@codefuel.in?subject=Scheduling%20a%20Consultation%20for%20My%20Upcoming%20Project&body=Dear%20Codefuel%2C%0A%0AI%20hope%20this%20message%20finds%20you%20well.%20I%27m%20reaching%20out%20to%20schedule%20a%20consultation.%0A%0AProposed%20Date%20and%20Time%3A%0A%5B01%2F01%2F2025%5D%2C%20at%20%5B20%3A00%20UTC%5D%0A%0APlease%20let%20me%20know%20if%20this%20works%20for%20you%2C%20or%20feel%20free%20to%20suggest%20an%20alternative%20time%20that%20is%20more%20convenient.%0A%0ALooking%20forward%20to%20our%20conversation%20and%20exploring%20how%20we%20can%20collaborate%20on%20this%20exciting%20project%21%0A%0ABest%20regards%2C%0A%5BAwesome%20Person%5D"
                 className="bg-primary text-white p-4 rounded-full font-medium"
               >
                 Schedule Consultation
