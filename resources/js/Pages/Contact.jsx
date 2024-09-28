@@ -12,7 +12,15 @@ export default function () {
   const submitContactForm = (e) => {
     e.preventDefault();
 
-    post(route("front.contact.store"));
+    post(route("front.contact.store"), {
+      onSuccess: () => {
+        setData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+    });
   };
 
   return (
