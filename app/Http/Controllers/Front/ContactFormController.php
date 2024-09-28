@@ -6,12 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Models\ContactForm;
 use Illuminate\Http\Request;
 
-class SubmitContactForm extends Controller
+class ContactFormController extends Controller
 {
-    /**
-     * Handle the incoming request.
-     */
-    public function __invoke(Request $request)
+    public function index()
+    {
+        return inertia('Contact');
+    }
+
+    public function store(Request $request)
     {
         $data = $request->validate([
             'name' => ['string', 'min:2', 'max:250'],

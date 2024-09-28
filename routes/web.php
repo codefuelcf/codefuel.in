@@ -1,16 +1,17 @@
 <?php
 
+use App\Http\Controllers\Front\ContactFormController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\SubmitContactForm;
 
 Route::inertia('/', 'Home')
     ->name('front.home');
 
-Route::prefix('/contact')->group(function () {
-    Route::inertia('/', 'Contact')
+Route::prefix('/contact')->controller(ContactFormController::class)->group(function () {
+    Route::get('/', 'index')
         ->name('front.contact');
 
-    Route::post('/', SubmitContactForm::class)
+    Route::post('/', 'store')
         ->name('front.contact.store');
 });
 
