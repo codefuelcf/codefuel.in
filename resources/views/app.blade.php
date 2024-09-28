@@ -25,7 +25,11 @@
 </head>
 
 <body>
+
   @inertia
+
+  <x-front.google-analytics-tag />
+
 </body>
 
 </html>

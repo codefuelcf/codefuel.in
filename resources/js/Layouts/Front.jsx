@@ -1,10 +1,18 @@
 import Logo from "../Components/Logo";
 import { Link } from "@inertiajs/react";
 import Menu from "../Components/Front/Menu";
+import SeoMetaTags from "../Components/Front/SeoMetaTags";
 
-export default function ({ children }) {
+export default function ({ children, props }) {
   return (
     <>
+      <SeoMetaTags
+        url={props.url}
+        title={props.title}
+        description={props.description}
+        featuredImage={props.featuredImage}
+      />
+
       <header className="sticky top-0 z-40 border-b bg-white">
         <div className="h-20 flex justify-between items-center container">
           <div id="navbar-logo">
@@ -53,7 +61,9 @@ export default function ({ children }) {
                 },
               ].map((el, index) => (
                 <li key={index}>
-                  <Link className="text-white" href={el.link}>{el.title}</Link>
+                  <Link className="text-white" href={el.link}>
+                    {el.title}
+                  </Link>
                 </li>
               ))}
             </ul>
