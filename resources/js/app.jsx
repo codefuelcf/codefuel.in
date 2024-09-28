@@ -7,6 +7,7 @@ createInertiaApp({
   title: title => `${title} | Codefuel`,
   resolve: (name) => {
     const pages = import.meta.glob("./Pages/**/*.jsx", { eager: true });
+    
     return pages[`./Pages/${name}.jsx`];
   },
   setup({ el, App, props }) {

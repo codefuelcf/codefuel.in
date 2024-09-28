@@ -7,9 +7,7 @@ export default defineConfig({
     laravel({
       input: [
         "resources/css/front.css",
-        "resources/css/tailwind.css",
-        "resources/js/front.js",
-        "resources/js/typed.js",
+        "resources/js/app.jsx",
       ],
       refresh: true,
     }),
