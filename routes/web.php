@@ -1,13 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\SubmitContactForm;
+use App\Http\Controllers\Front\SubmitContactForm;
 
 Route::inertia('/', 'Home')
     ->name('front.home');
 
-Route::inertia('/contact', 'Contact')
-    ->name('front.contact');
+Route::prefix('/contact')->group(function () {
+    Route::inertia('/', 'Contact')
+        ->name('front.contact');
+
+    Route::post('/', SubmitContactForm::class)
+        ->name('front.contact.store');
+});
 
 Route::inertia('/privacy-policy', 'PrivacyPolicy')
     ->name('front.privacy-policy');
@@ -17,6 +22,3 @@ Route::inertia('/returns-and-refunds', 'ReturnsAndRefunds')
 
 Route::inertia('/terms-and-conditions', 'TermsAndConditions')
     ->name('front.terms-and-conditions');
-
-Route::post('/contact', SubmitContactForm::class)
-    ->name('front.contact.store');
