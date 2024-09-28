@@ -1,5 +1,6 @@
+import { useState } from "react";
 import Front from "../Layouts/Front";
-import { Head } from "@inertiajs/react";
+import { Head, router } from "@inertiajs/react";
 
 import Vivo from "../../img/brands/vivo.png";
 import RoyalEnfield from "../../img/brands/royal-enfield.png";
@@ -7,6 +8,16 @@ import SheenGraphics from "../../img/brands/sheen-graphics.png";
 import DelhiPublicSchool from "../../img/brands/delhi-public-school.png";
 
 export default function () {
+  const [email, setEmail] = useState("");
+
+  const submitStartAProjectForm = (e) => {
+    e.preventDefault();
+
+    router.get(route("front.contact"), {
+      email: email,
+    });
+  };
+
   return (
     <Front>
       <Head title="Home" />
@@ -131,11 +142,6 @@ export default function () {
               matter. We won't offer you something we don't excel in.
             </h3>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-              {/* 
-              - Be secific to it and not mention anything else
-              - Don;t praise, people should know
-              For what / Why / Experience / 
-              */}
               {[
                 {
                   title: "Laravel",
@@ -170,7 +176,8 @@ export default function () {
               Steps we take to deliver outstanding projects.
             </h2>
             <h3 className="text-xl mb-8">
-              Our approach to work is simple and robust. Our process helps you get the best results
+              Our approach to work is simple and robust. Our process helps you
+              get the best results
             </h3>
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
               {[
@@ -212,8 +219,25 @@ export default function () {
               Want to start a project?
             </h2>
             <h3 className="text-xl mb-8">
-             Let's collaborate on your next big project and create something great together.
+              Let's collaborate on your next big project and create something
+              great together.
             </h3>
+
+            <div className="max-w-screen-md">
+              <form onSubmit={submitStartAProjectForm}>
+                <div className="relative w-full">
+                  <input
+                    name="email"
+                    placeholder="Enter your email address"
+                    className="p-6 rounded-full w-full pr-40 text-lg"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <button className="absolute bg-primary text-white py-5 px-8 my-2 right-8 rounded-full hover:bg-primary/90">
+                    Start
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </main>
