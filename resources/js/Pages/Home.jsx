@@ -167,7 +167,7 @@ export default function () {
         <section id="how-we-work" className="bg-primary text-white py-20">
           <div className="container">
             <h2 className="text-4xl heading-text mb-8 !decoration-black">
-              Steps we follow to complete your projects
+              Steps we take to deliver outstanding projects.
             </h2>
             <h3 className="text-xl mb-8">
               Our approach to work is simple and robust. Our process helps you get the best results
@@ -192,7 +192,7 @@ export default function () {
                 {
                   title: "4) Maintainence",
                   content:
-                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                    "After the projects are complete, we provide long-term maintenance and support. We help with deployment, upgrades, adding functionalities, and more to ensure your services run smoothly.",
                 },
               ].map((el, index) => (
                 <div key={index}>
