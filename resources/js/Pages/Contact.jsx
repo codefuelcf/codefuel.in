@@ -1,8 +1,28 @@
 import Front from "../Layouts/Front";
-import { Head } from "@inertiajs/react";
+import { Head, useForm } from "@inertiajs/react";
 import PageTitle from "../Components/Front/PageTitle";
 
 export default function () {
+  const { data, setData, post, processing, errors } = useForm({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const submitContactForm = (e) => {
+    e.preventDefault();
+
+    post(route("front.contact.store"), {
+      onSuccess: () => {
+        setData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      },
+    });
+  };
+
   return (
     <Front>
       <Head title="Contact" />
@@ -15,7 +35,7 @@ export default function () {
               <h3 className="text-5xl capitalize font-bold mb-4 lg:text-6xl">
                 let's make something. together.
               </h3>
-              
+
               <h4 className="text-xl text-black/70">
                 It all starts with a (hopefully) pleasant conversation. Let us
                 know a little about your business and what you're hoping to
@@ -28,12 +48,14 @@ export default function () {
               fill out the form below.
             </h4>
 
-            <form className="flex flex-col gap-4">
+            <form className="flex flex-col gap-4" onSubmit={submitContactForm}>
               <div className="flex flex-col gap-2">
                 <label htmlFor="name">Name</label>
                 <input
                   className="w-full"
                   placeholder="Name"
+                  value={data.name}
+                  onChange={(e) => setData("name", e.target.value)}
                   type="text"
                   name="name"
                   id="name"
@@ -44,6 +66,8 @@ export default function () {
                 <input
                   className="w-full"
                   placeholder="Email"
+                  value={data.email}
+                  onChange={(e) => setData("email", e.target.value)}
                   type="email"
                   name="email"
                   id="email"
@@ -54,6 +78,8 @@ export default function () {
                 <textarea
                   className="w-full"
                   placeholder="Name"
+                  value={data.message}
+                  onChange={(e) => setData("message", e.target.value)}
                   type="text"
                   name="message"
                   id="message"
