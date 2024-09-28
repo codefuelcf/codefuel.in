@@ -177,7 +177,7 @@ export default function () {
                 {
                   title: "1) Ideation",
                   content:
-                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                    "We enjoy discussing and understanding your ideas to help you refine and envision an incredible platform. Exploring your ideas allows us to offer you the optimal solution.",
                 },
                 {
                   title: "2) Prototyping",
