@@ -7,10 +7,10 @@ export default function ({ children, props }) {
   return (
     <>
       <SeoMetaTags
-        url={props.url}
-        title={props.title}
-        description={props.description}
-        featuredImage={props.featuredImage}
+        url={props?.url}
+        title={props?.title}
+        description={props?.description}
+        featuredImage={props?.featuredImage}
       />
 
       <header className="sticky top-0 z-40 border-b bg-white">
