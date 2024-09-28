@@ -187,7 +187,7 @@ export default function () {
                 {
                   title: "3) Implementation",
                   content:
-                    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum eiciendis, sit at quod, eveniet nisi earum recusandae quisquam quos, nulla laudantium velit id voluptatem repellendus.",
+                    "With a tailored tech stack, we implement and shape your ideas, making them ready to ship and scale. We iterate on this step until we find what works best for you and delivers targeted results.",
                 },
                 {
                   title: "4) Maintainence",
