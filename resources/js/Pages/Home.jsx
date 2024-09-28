@@ -211,6 +211,9 @@ export default function () {
             <h2 className="text-4xl heading-text mb-8">
               Want to start a project?
             </h2>
+            <h3 className="text-xl mb-8">
+             Let's collaborate on your next big project and create something great together.
+            </h3>
           </div>
         </section>
       </main>
