@@ -11,7 +11,7 @@ export default function () {
       <main>
         <section id="returns-and-refunds" class="px-6 py-20 | md:px-32">
           <div class="container text-justify">
-            <h4 class="text-2xl font-bold">Services</h4>
+            <h3 class="text-2xl font-bold">Services</h3>
             <ol class="list-decimal list-inside">
               <li>
                 <strong>Service-Based Solutions</strong>
@@ -46,7 +46,7 @@ export default function () {
               </li>
             </ol>
 
-            <h4 class="text-2xl font-bold mt-8">Digital Products</h4>
+            <h3 class="text-2xl font-bold mt-8">Digital Products</h3>
             <ol class="list-decimal list-inside">
               <li>
                 <strong>Non-Tangible Digital Products</strong>
@@ -85,7 +85,7 @@ export default function () {
               </li>
             </ol>
 
-            <h4 class="text-2xl font-bold mt-8">Exclusions</h4>
+            <h3 class="text-2xl font-bold mt-8">Exclusions</h3>
             <p>
               Refunds and returns will not be offered under the following
               circumstances:
@@ -111,9 +111,9 @@ export default function () {
               </li>
             </ul>
 
-            <h4 class="text-2xl font-bold mt-8">
+            <h3 class="text-2xl font-bold mt-8">
               How to Request a Refund or Return
-            </h4>
+            </h3>
             <p>
               To request a refund or report an issue with a product or service:
             </p>

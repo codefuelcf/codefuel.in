@@ -12,20 +12,21 @@ export default function () {
         <section id="contact" className="bg-grid py-20">
           <div className="container !max-w-screen-md flex flex-col gap-8">
             <div>
-              <h1 className="text-5xl capitalize font-bold mb-4 lg:text-6xl">
+              <h3 className="text-5xl capitalize font-bold mb-4 lg:text-6xl">
                 let's make something. together.
-              </h1>
-              <h2 className="text-xl text-black/70">
+              </h3>
+              
+              <h4 className="text-xl text-black/70">
                 It all starts with a (hopefully) pleasant conversation. Let us
                 know a little about your business and what you're hoping to
                 achieve so that we can see if we're a good fit for your goals.
-              </h2>
+              </h4>
             </div>
 
-            <h2>
+            <h4>
               Email <a href="mailto:hello@codefuel.in">hello@codefuel.in</a> or
               fill out the form below.
-            </h2>
+            </h4>
 
             <form className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">

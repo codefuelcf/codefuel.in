@@ -20,9 +20,7 @@ export default function () {
         <div className="container">
           <div className="h-20 flex justify-between items-center">
             <div id="navbar-logo">
-              <a href="/">
-                <Logo className="h-12 text-white" />
-              </a>
+              <Logo className="h-12 text-white" />
             </div>
             <button onClick={() => toggleMenu(!isOpen)}>
               <XCircle strokeWidth={3} className="size-5" />

@@ -19,8 +19,8 @@ export default function () {
           </li>
 
           <li>
-            <strong>One(1) Year Free Technical Support:</strong> Codefuel
-            provides One(1) year free technical support for following kind of
+            <strong>Three(3) Months Free Technical Support:</strong> Codefuel
+            provides Three(3) months free technical support for following kind of
             issues:
             <ul class="list-disc list-inside">
               <li>Logical Bugs/Calculation related errors/bugs</li>
