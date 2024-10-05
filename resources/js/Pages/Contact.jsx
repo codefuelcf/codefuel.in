@@ -4,12 +4,12 @@ import PageTitle from "../Components/Front/PageTitle";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useRef } from "react";
 
-export default function () {
+export default function ({ ...props }) {
   const recaptchaRef = useRef(null);
 
   const { data, setData, post, transform } = useForm({
     name: "",
-    email: "",
+    email: props.email ?? "",
     message: "",
   });
 
@@ -89,7 +89,7 @@ export default function () {
                 <label htmlFor="message">Message</label>
                 <textarea
                   className="w-full"
-                  placeholder="Name"
+                  placeholder="Message"
                   value={data.message}
                   onChange={(e) => setData("message", e.target.value)}
                   type="text"
