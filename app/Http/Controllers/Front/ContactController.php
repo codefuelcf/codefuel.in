@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\Http;
 
 class ContactController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return inertia('Contact');
+        return inertia('Contact', $request->all('email'));
     }
 
     public function store(Request $request)
