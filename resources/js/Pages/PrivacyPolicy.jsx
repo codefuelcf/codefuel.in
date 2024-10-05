@@ -1,5 +1,5 @@
 import Front from "../Layouts/Front";
-import { Head } from "@inertiajs/react";
+import { Head, Link } from "@inertiajs/react";
 import PageTitle from "../Components/Front/PageTitle";
 
 export default function () {
@@ -135,7 +135,7 @@ export default function () {
           <p>
             If there are any questions regarding this privacy policy you may
             contact us using the contact form or our contact details mentioned
-            on our contact page.
+            on our <Link href={route('front.contact')}>contact page</Link>.
           </p>
         </div>
       </main>
