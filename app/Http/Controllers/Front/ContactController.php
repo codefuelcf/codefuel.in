@@ -31,9 +31,7 @@ class ContactController extends Controller
         if ($reacptcha['success']) {
             ContactForm::create($data);
         }
-
-
-
+        
         return to_route('front.contact');
     }
 }
