@@ -8,7 +8,7 @@ export default function () {
       <Head title="Terms & Conditions" />
       <PageTitle title="Terms & Conditions" />
 
-      <div className="container py-20 text-justify">
+      <section id="terms-and-conditions" className="container py-20 text-justify">
         <ol className="list-decimal list-inside flex flex-col gap-8">
           <li>
             <strong>Job Order/Contract: </strong>The client's approval for work
@@ -256,7 +256,7 @@ export default function () {
             the code for other projects.
           </li>
         </ol>
-      </div>
+      </section>
     </Front>
   );
 }

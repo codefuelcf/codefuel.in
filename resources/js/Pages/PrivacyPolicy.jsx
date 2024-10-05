@@ -9,7 +9,7 @@ export default function () {
       <PageTitle title="Privacy Policy" />
 
       <main>
-        <div className="container py-20 text-justify">
+        <section id="privacy-policy" className="container py-20 text-justify">
           <h3 className="text-2xl font-bold">
             What information do we collect?
           </h3>
@@ -137,7 +137,7 @@ export default function () {
             contact us using the contact form or our contact details mentioned
             on our <Link href={route('front.contact')}>contact page</Link>.
           </p>
-        </div>
+        </section>
       </main>
     </Front>
   );
