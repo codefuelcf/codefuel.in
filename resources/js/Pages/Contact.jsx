@@ -1,9 +1,13 @@
 import Front from "../Layouts/Front";
 import { Head, useForm } from "@inertiajs/react";
 import PageTitle from "../Components/Front/PageTitle";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useRef } from "react";
 
 export default function () {
-  const { data, setData, post, processing, errors } = useForm({
+  const recaptchaRef = useRef(null);
+
+  const { data, setData, post, transform } = useForm({
     name: "",
     email: "",
     message: "",
@@ -12,12 +16,20 @@ export default function () {
   const submitContactForm = (e) => {
     e.preventDefault();
 
+    transform((data) => ({
+      ...data,
+      google_recaptcha_response: recaptchaRef.current.getValue(),
+    }));
+
     post(route("front.contact.store"), {
       onSuccess: () => {
+        recaptchaRef.current.reset();
+
         setData({
           name: "",
           email: "",
           message: "",
+          google_recaptcha_response: "",
         });
       },
     });
@@ -86,9 +98,13 @@ export default function () {
                   rows={10}
                 ></textarea>
               </div>
+              <ReCAPTCHA
+                ref={recaptchaRef}
+                sitekey={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}
+              />
               <div>
                 <button className="bg-primary px-6 py-2 inline text-white">
-                  Get In Touch
+                  Get In Touchs
                 </button>
               </div>
             </form>
