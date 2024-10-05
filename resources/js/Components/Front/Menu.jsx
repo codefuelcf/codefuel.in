@@ -4,16 +4,22 @@ import { Link } from "@inertiajs/react";
 import { Menu, XCircle } from "lucide-react";
 
 export default function () {
-  const [isOpen, toggleMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+
+    document.body.style.overflow = isOpen ? "unset" : "hidden";
+  };
   return (
     <>
-      <button onClick={() => toggleMenu(!isOpen)}>
+      <button onClick={toggleMenu}>
         <Menu className="size-5" />
       </button>
 
       <div
         className={
-          "fixed inset-0 w-screen h-screen bg-primary text-white z-50 transition-opacity delay-50 duration-700 " +
+          "fixed inset-0 w-screen h-screen bg-primary text-white z-50 transition-opacity delay-50 duration-700 overflow-y-auto " +
           (isOpen ? "opacity-100 visible" : "opacity-0 invisible")
         }
       >
