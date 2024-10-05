@@ -7,7 +7,7 @@ import { useRef } from "react";
 export default function ({ ...props }) {
   const recaptchaRef = useRef(null);
 
-  const { data, setData, post, transform } = useForm({
+  const { data, setData, post, transform, wasSuccessful } = useForm({
     name: "",
     email: props.email ?? "",
     message: "",
@@ -60,54 +60,65 @@ export default function ({ ...props }) {
               fill out the form below.
             </h4>
 
-            <form className="flex flex-col gap-4" onSubmit={submitContactForm}>
-              <div className="flex flex-col gap-2">
-                <label htmlFor="name">Name</label>
-                <input
-                  className="w-full"
-                  placeholder="Name"
-                  value={data.name}
-                  onChange={(e) => setData("name", e.target.value)}
-                  type="text"
-                  name="name"
-                  id="name"
+            {wasSuccessful && (
+              <h4 className="text-xl text-black/70">
+                Thank you for reaching out. We will be in touch shortly.
+              </h4>
+            )}
+
+            {!wasSuccessful && (
+              <form
+                className="flex flex-col gap-4"
+                onSubmit={submitContactForm}
+              >
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    className="w-full"
+                    placeholder="Name"
+                    value={data.name}
+                    onChange={(e) => setData("name", e.target.value)}
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    className="w-full"
+                    placeholder="Email"
+                    value={data.email}
+                    onChange={(e) => setData("email", e.target.value)}
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    className="w-full"
+                    placeholder="Message"
+                    value={data.message}
+                    onChange={(e) => setData("message", e.target.value)}
+                    type="text"
+                    name="message"
+                    id="message"
+                    rows={10}
+                  ></textarea>
+                </div>
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}
                 />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label htmlFor="email">Email</label>
-                <input
-                  className="w-full"
-                  placeholder="Email"
-                  value={data.email}
-                  onChange={(e) => setData("email", e.target.value)}
-                  type="email"
-                  name="email"
-                  id="email"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  className="w-full"
-                  placeholder="Message"
-                  value={data.message}
-                  onChange={(e) => setData("message", e.target.value)}
-                  type="text"
-                  name="message"
-                  id="message"
-                  rows={10}
-                ></textarea>
-              </div>
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey={import.meta.env.VITE_GOOGLE_RECAPTCHA_SITE_KEY}
-              />
-              <div>
-                <button className="bg-primary px-6 py-2 inline text-white">
-                  Get In Touchs
-                </button>
-              </div>
-            </form>
+                <div>
+                  <button className="bg-primary px-6 py-2 inline text-white">
+                    Get In Touchs
+                  </button>
+                </div>
+              </form>
+            )}
           </div>
         </section>
       </main>
